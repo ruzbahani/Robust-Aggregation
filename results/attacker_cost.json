@@ -1,0 +1,24 @@
+{
+  "device": "cpu",
+  "local_epochs": 2,
+  "examples_in_partition": 4527,
+  "solver": {
+    "basis_steps": 80,
+    "full_steps": 80,
+    "restarts": 3,
+    "beta": 1.0
+  },
+  "attacker_craft_seconds": {
+    "median": 1.3406116999976803,
+    "min": 1.3006552000006195,
+    "max": 1.6892214000108652,
+    "n": 3
+  },
+  "honest_local_train_seconds": {
+    "median": 37.61190259999421,
+    "min": 35.41887470000074,
+    "max": 37.97253329999512,
+    "n": 3
+  },
+  "honest_over_attacker": 28.055776777167686
+}

@@ -1,0 +1,44 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tail_rounds": 5,
+  "per_seed": [
+    {
+      "seed": 0,
+      "rounds": 35,
+      "passport_cls": 0.263956,
+      "nopassport_cls": 0.28025399999999995,
+      "passport_proto": 0.24625599999999997,
+      "nopassport_proto": 0.27354,
+      "d_cls": 0.016297999999999924,
+      "d_proto": 0.02728400000000003
+    },
+    {
+      "seed": 1,
+      "rounds": 35,
+      "passport_cls": 0.255678,
+      "nopassport_cls": 0.276046,
+      "passport_proto": 0.23686200000000004,
+      "nopassport_proto": 0.26659599999999994,
+      "d_cls": 0.020367999999999997,
+      "d_proto": 0.0297339999999999
+    },
+    {
+      "seed": 2,
+      "rounds": 35,
+      "passport_cls": 0.267514,
+      "nopassport_cls": 0.286288,
+      "passport_proto": 0.250692,
+      "nopassport_proto": 0.27966199999999997,
+      "d_cls": 0.018774000000000013,
+      "d_proto": 0.02896999999999994
+    }
+  ],
+  "mean_d_classifier": 0.01847999999999998,
+  "sd_d_classifier": 0.002050866158480403,
+  "mean_d_prototype": 0.028662666666666625,
+  "sd_d_prototype": 0.0012535810038977
+}

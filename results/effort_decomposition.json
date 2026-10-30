@@ -1,0 +1,479 @@
+{
+ "schema": "fixed-readout-v2",
+ "report_from_round": 12,
+ "source_files": [
+  "effort_decomposition_s0.json",
+  "effort_decomposition_s1.json",
+  "effort_decomposition_s2.json"
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "offset_over_innov_full": [
+  0.9810716600086528,
+  0.0031263934124549937
+ ],
+ "innov_full_over_cohort_median": [
+  1.0564985225509063,
+  0.04400014798324732
+ ],
+ "by_fraction": {
+  "0": {
+   "move_over_move_full": [
+    1.201817510745966e-07,
+    5.6682890832533085e-09
+   ],
+   "innov_over_innov_full": [
+    0.9810716600136923,
+    0.003126393065059365
+   ],
+   "innov_over_cohort_median": [
+    1.0365146269055838,
+    0.049304266688447965
+   ],
+   "move_over_offset": [
+    6.867757288750193e-08,
+    3.899582541942558e-09
+   ],
+   "cos_move_offset": null,
+   "cos_move_fullmove": null,
+   "fraction_of_steps": 0.0
+  },
+  "0.01": {
+   "move_over_move_full": [
+    0.2436458829841325,
+    0.06374098676546869
+   ],
+   "innov_over_innov_full": [
+    0.9845369140996079,
+    0.003215567840653063
+   ],
+   "innov_over_cohort_median": [
+    1.0443304466155612,
+    0.047063665884095655
+   ],
+   "move_over_offset": [
+    0.12948972965509903,
+    0.03453107676020807
+   ],
+   "cos_move_offset": [
+    -0.05940655650263716,
+    0.029225121281798945
+   ],
+   "cos_move_fullmove": [
+    0.09648307582857384,
+    0.04457045894712178
+   ],
+   "fraction_of_steps": 0.010301963294921042
+  },
+  "0.02": {
+   "move_over_move_full": [
+    0.5271339886169231,
+    0.058794232096561254
+   ],
+   "innov_over_innov_full": [
+    0.9848801022296868,
+    0.008158476203126491
+   ],
+   "innov_over_cohort_median": [
+    1.0498836623721737,
+    0.04881579678316996
+   ],
+   "move_over_offset": [
+    0.3136163284931208,
+    0.04320391678172363
+   ],
+   "cos_move_offset": [
+    -0.13203799935990382,
+    0.023173665739563226
+   ],
+   "cos_move_fullmove": [
+    0.2692374284589155,
+    0.03530625416516983
+   ],
+   "fraction_of_steps": 0.020868011096884336
+  },
+  "0.05": {
+   "move_over_move_full": [
+    0.9894597875348565,
+    0.03014166213900632
+   ],
+   "innov_over_innov_full": [
+    0.9984391277255028,
+    0.015195173693009694
+   ],
+   "innov_over_cohort_median": [
+    1.0555043633755243,
+    0.060770035807841856
+   ],
+   "move_over_offset": [
+    0.5727761060956097,
+    0.01579650561689632
+   ],
+   "cos_move_offset": [
+    -0.26561690664053145,
+    0.03727654120907077
+   ],
+   "cos_move_fullmove": [
+    0.4615151522799635,
+    0.035531299738396804
+   ],
+   "fraction_of_steps": 0.050144046094750316
+  },
+  "0.1": {
+   "move_over_move_full": [
+    0.9719518967816575,
+    0.05562789209673754
+   ],
+   "innov_over_innov_full": [
+    0.980445511613711,
+    0.015971603073495908
+   ],
+   "innov_over_cohort_median": [
+    1.0351840285692193,
+    0.06122624692690008
+   ],
+   "move_over_offset": [
+    0.5512875710454107,
+    0.009583655219981103
+   ],
+   "cos_move_offset": [
+    -0.30048043297417454,
+    0.02792809615623598
+   ],
+   "cos_move_fullmove": [
+    0.49936967875872623,
+    0.001567821862855514
+   ],
+   "fraction_of_steps": 0.10028809218950063
+  },
+  "0.2": {
+   "move_over_move_full": [
+    0.9266052284185307,
+    0.005480212010549998
+   ],
+   "innov_over_innov_full": [
+    0.9874032275278893,
+    0.012467720531941956
+   ],
+   "innov_over_cohort_median": [
+    1.048693473102051,
+    0.045610205155428345
+   ],
+   "move_over_offset": [
+    0.5212030583067292,
+    0.009457032115732938
+   ],
+   "cos_move_offset": [
+    -0.2576839762910028,
+    0.02481839279731288
+   ],
+   "cos_move_fullmove": [
+    0.48928801901884306,
+    0.008457063818556093
+   ],
+   "fraction_of_steps": 0.1986822449850619
+  },
+  "0.5": {
+   "move_over_move_full": [
+    0.9826444172273959,
+    0.01994712892790734
+   ],
+   "innov_over_innov_full": [
+    0.9936290201996187,
+    0.013218315488467273
+   ],
+   "innov_over_cohort_median": [
+    1.0510100158585562,
+    0.05219334242455009
+   ],
+   "move_over_offset": [
+    0.5551998924572711,
+    0.014342058749004105
+   ],
+   "cos_move_offset": [
+    -0.26522605142848127,
+    0.015367147053872267
+   ],
+   "cos_move_fullmove": [
+    0.5125468659523402,
+    0.016624733531094824
+   ],
+   "fraction_of_steps": 0.5
+  },
+  "full": {
+   "move_over_move_full": [
+    1.0,
+    0.0
+   ],
+   "innov_over_innov_full": [
+    1.0,
+    0.0
+   ],
+   "innov_over_cohort_median": [
+    1.0564985225509063,
+    0.04400014798324732
+   ],
+   "move_over_offset": [
+    0.5803990815061779,
+    0.04440894044936636
+   ],
+   "cos_move_offset": [
+    -0.2583815453797977,
+    0.013423772213408049
+   ],
+   "cos_move_fullmove": [
+    1.0000000000000002,
+    0.0
+   ],
+   "fraction_of_steps": 1.0
+  }
+ },
+ "per_seed": [
+  {
+   "seed": 0,
+   "full_steps": 142,
+   "n_rounds": 24,
+   "by_steps": {
+    "0": {
+     "fraction_of_steps": 0.0,
+     "move_over_move_full": 1.218624448964535e-07,
+     "innov_over_innov_full": 0.9807963777666547,
+     "innov_over_cohort_median": 1.0986506301233154,
+     "move_over_offset": 6.330988706378902e-08,
+     "cos_move_offset": null,
+     "cos_move_fullmove": null
+    },
+    "1": {
+     "fraction_of_steps": 0.007042253521126761,
+     "move_over_move_full": 0.155338240112948,
+     "innov_over_innov_full": 0.9856485657267228,
+     "innov_over_cohort_median": 1.1033756254749794,
+     "move_over_offset": 0.08260349187753824,
+     "cos_move_offset": -0.018172738130984786,
+     "cos_move_fullmove": 0.03348468040570913
+    },
+    "3": {
+     "fraction_of_steps": 0.02112676056338028,
+     "move_over_move_full": 0.4772968251609903,
+     "innov_over_innov_full": 0.9939629804760218,
+     "innov_over_cohort_median": 1.1122196007483909,
+     "move_over_offset": 0.27461651348017113,
+     "cos_move_offset": -0.09942139311404244,
+     "cos_move_fullmove": 0.25322841599464213
+    },
+    "7": {
+     "fraction_of_steps": 0.04929577464788732,
+     "move_over_move_full": 0.9799484878852707,
+     "innov_over_innov_full": 1.019780831785567,
+     "innov_over_cohort_median": 1.1401049338073275,
+     "move_over_offset": 0.551763277315326,
+     "cos_move_offset": -0.2193533762596724,
+     "cos_move_fullmove": 0.4671237294714267
+    },
+    "14": {
+     "fraction_of_steps": 0.09859154929577464,
+     "move_over_move_full": 1.0505792893370667,
+     "innov_over_innov_full": 1.0028650679253943,
+     "innov_over_cohort_median": 1.1196910956988508,
+     "move_over_offset": 0.5598736267092935,
+     "cos_move_offset": -0.2656692398066888,
+     "cos_move_fullmove": 0.4998620855189691
+    },
+    "28": {
+     "fraction_of_steps": 0.19718309859154928,
+     "move_over_move_full": 0.9321043228104566,
+     "innov_over_innov_full": 1.0048984528808123,
+     "innov_over_cohort_median": 1.1042838298329183,
+     "move_over_offset": 0.5114680756660561,
+     "cos_move_offset": -0.22802210175167217,
+     "cos_move_fullmove": 0.4773396855971507
+    },
+    "71": {
+     "fraction_of_steps": 0.5,
+     "move_over_move_full": 1.0014113507299258,
+     "innov_over_innov_full": 1.0054079199984582,
+     "innov_over_cohort_median": 1.1186270722254053,
+     "move_over_offset": 0.5470017918747734,
+     "cos_move_offset": -0.2536976688651677,
+     "cos_move_fullmove": 0.512799608476467
+    },
+    "142": {
+     "fraction_of_steps": 1.0,
+     "move_over_move_full": 1.0,
+     "innov_over_innov_full": 1.0,
+     "innov_over_cohort_median": 1.1113506593138158,
+     "move_over_offset": 0.5253147589369438,
+     "cos_move_offset": -0.23948576933334587,
+     "cos_move_fullmove": 1.0000000000000002
+    }
+   },
+   "offset_over_innov_full": 0.9807963776387107,
+   "innov_full_over_cohort_median": 1.1113506593138158
+  },
+  {
+   "seed": 1,
+   "full_steps": 176,
+   "n_rounds": 24,
+   "by_steps": {
+    "0": {
+     "fraction_of_steps": 0.0,
+     "move_over_move_full": 1.1255349558260492e-07,
+     "innov_over_innov_full": 0.9850309061873475,
+     "innov_over_cohort_median": 1.032845601529836,
+     "move_over_offset": 7.02654789053867e-08,
+     "cos_move_offset": null,
+     "cos_move_fullmove": null
+    },
+    "2": {
+     "fraction_of_steps": 0.011363636363636364,
+     "move_over_move_full": 0.3034742139385258,
+     "innov_over_innov_full": 0.9877998561242036,
+     "innov_over_cohort_median": 1.041411110929881,
+     "move_over_offset": 0.164758812505798,
+     "cos_move_offset": -0.08247106405706342,
+     "cos_move_fullmove": 0.12976842771697047
+    },
+    "4": {
+     "fraction_of_steps": 0.022727272727272728,
+     "move_over_move_full": 0.6096922740718904,
+     "innov_over_innov_full": 0.9865004074218218,
+     "innov_over_cohort_median": 1.0444090019128165,
+     "move_over_offset": 0.3738486366118838,
+     "cos_move_offset": -0.1511114287847123,
+     "cos_move_fullmove": 0.31820021852597885
+    },
+    "9": {
+     "fraction_of_steps": 0.05113636363636364,
+     "move_over_move_full": 0.9582302865473372,
+     "innov_over_innov_full": 0.9855914187409187,
+     "innov_over_cohort_median": 1.0263019211152276,
+     "move_over_offset": 0.5767144039714975,
+     "cos_move_offset": -0.3106364561932903,
+     "cos_move_fullmove": 0.5019557222001901
+    },
+    "18": {
+     "fraction_of_steps": 0.10227272727272728,
+     "move_over_move_full": 0.9304036035285239,
+     "innov_over_innov_full": 0.9716149724530945,
+     "innov_over_cohort_median": 1.0092674675817082,
+     "move_over_offset": 0.5560763606067963,
+     "cos_move_offset": -0.33404472551582004,
+     "cos_move_fullmove": 0.49725124414894273
+    },
+    "35": {
+     "fraction_of_steps": 0.19886363636363635,
+     "move_over_move_full": 0.9191260875642941,
+     "innov_over_innov_full": 0.9767572207190776,
+     "innov_over_cohort_median": 1.0492306155095716,
+     "move_over_offset": 0.5340125751493334,
+     "cos_move_offset": -0.2887648006578859,
+     "cos_move_fullmove": 0.4957214122312635
+    },
+    "88": {
+     "fraction_of_steps": 0.5,
+     "move_over_move_full": 0.9915005662583658,
+     "innov_over_innov_full": 1.0003105263567467,
+     "innov_over_cohort_median": 1.042836771102106,
+     "move_over_offset": 0.5753655333597625,
+     "cos_move_offset": -0.2550357414810674,
+     "cos_move_fullmove": 0.5327803752985278
+    },
+    "176": {
+     "fraction_of_steps": 1.0,
+     "move_over_move_full": 1.0,
+     "innov_over_innov_full": 1.0,
+     "innov_over_cohort_median": 1.0545175293949014,
+     "move_over_offset": 0.6340663082083107,
+     "cos_move_offset": -0.26624553746011853,
+     "cos_move_fullmove": 1.0000000000000002
+    }
+   },
+   "offset_over_innov_full": 0.9850309066634182,
+   "innov_full_over_cohort_median": 1.0545175293949014
+  },
+  {
+   "seed": 2,
+   "full_steps": 160,
+   "n_rounds": 24,
+   "by_steps": {
+    "0": {
+     "fraction_of_steps": 0.0,
+     "move_over_move_full": 1.261293127447314e-07,
+     "innov_over_innov_full": 0.9773876960870751,
+     "innov_over_cohort_median": 0.9780476490636005,
+     "move_over_offset": 7.245735269333009e-08,
+     "cos_move_offset": null,
+     "cos_move_fullmove": null
+    },
+    "2": {
+     "fraction_of_steps": 0.0125,
+     "move_over_move_full": 0.2721251949009237,
+     "innov_over_innov_full": 0.9801623204478973,
+     "innov_over_cohort_median": 0.9882046034418235,
+     "move_over_offset": 0.14110688458196086,
+     "cos_move_offset": -0.07757586731986328,
+     "cos_move_fullmove": 0.1261961193630419
+    },
+    "3": {
+     "fraction_of_steps": 0.01875,
+     "move_over_move_full": 0.4944128666178884,
+     "innov_over_innov_full": 0.9741769187912168,
+     "innov_over_cohort_median": 0.9930223844553132,
+     "move_over_offset": 0.29238383538730756,
+     "cos_move_offset": -0.14558117618095678,
+     "cos_move_fullmove": 0.23628365085612557
+    },
+    "8": {
+     "fraction_of_steps": 0.05,
+     "move_over_move_full": 1.0302005881719616,
+     "innov_over_innov_full": 0.9899451326500228,
+     "innov_over_cohort_median": 1.0001062352040175,
+     "move_over_offset": 0.5898506370000056,
+     "cos_move_offset": -0.26686088746863157,
+     "cos_move_fullmove": 0.4154660051682737
+    },
+    "16": {
+     "fraction_of_steps": 0.1,
+     "move_over_move_full": 0.9348727974793818,
+     "innov_over_innov_full": 0.9668564944626441,
+     "innov_over_cohort_median": 0.9765935224270994,
+     "move_over_offset": 0.5379127258201424,
+     "cos_move_offset": -0.3017273336000148,
+     "cos_move_fullmove": 0.5009957066082669
+    },
+    "32": {
+     "fraction_of_steps": 0.2,
+     "move_over_move_full": 0.9285852748808411,
+     "innov_over_innov_full": 0.9805540089837781,
+     "innov_over_cohort_median": 0.992565973963663,
+     "move_over_offset": 0.5181285241047979,
+     "cos_move_offset": -0.25626502646345045,
+     "cos_move_fullmove": 0.4948029592281149
+    },
+    "80": {
+     "fraction_of_steps": 0.5,
+     "move_over_move_full": 0.955021334693896,
+     "innov_over_innov_full": 0.9751686142436512,
+     "innov_over_cohort_median": 0.9915662042481578,
+     "move_over_offset": 0.5432323521372775,
+     "cos_move_offset": -0.28694474393920877,
+     "cos_move_fullmove": 0.4920606140820258
+    },
+    "160": {
+     "fraction_of_steps": 1.0,
+     "move_over_move_full": 1.0,
+     "innov_over_innov_full": 1.0,
+     "innov_over_cohort_median": 1.0036273789440018,
+     "move_over_offset": 0.5818161773732793,
+     "cos_move_offset": -0.26941332934592876,
+     "cos_move_fullmove": 1.0000000000000002
+    }
+   },
+   "offset_over_innov_full": 0.9773876957238294,
+   "innov_full_over_cohort_median": 1.0036273789440018
+  }
+ ]
+}

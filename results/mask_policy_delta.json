@@ -1,0 +1,16 @@
+{
+ "scored_client_rounds": 29280,
+ "tau": 3.7859094579543044,
+ "abs_change_max": 13.618612333314442,
+ "abs_change_mean": 0.09900560590765561,
+ "share_changed": 0.2959699453551913,
+ "decision_flips": {
+  "honest_replay": 0,
+  "victim": 0,
+  "bystander": 17
+ },
+ "decision_flips_total": 17,
+ "largest_statistical_suspicion": 81.97999829344424,
+ "largest_honest_suspicion_declared": 6.608252963356734,
+ "clip": 250.0
+}

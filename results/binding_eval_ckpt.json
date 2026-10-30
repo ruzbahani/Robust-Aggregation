@@ -1,0 +1,221 @@
+{
+ "config": {
+  "rounds": 30,
+  "local_epochs": 2,
+  "width": 64,
+  "embed_dim": 128,
+  "num_classes": 100,
+  "alpha_dyn": 0.5,
+  "calib_steps": 50,
+  "attack_frac": 0.2,
+  "attack_steps": 2000,
+  "warmup": 30,
+  "delta": 1.0,
+  "max_proto_ratio": 1.0,
+  "min_label_stability": 0.5,
+  "synthetic": false,
+  "device": "cuda",
+  "seed": 0,
+  "random_theta_seed": 0,
+  "save_checkpoint": "checkpoints/binding_a05_s0_clientA.pt",
+  "out": "results/binding_eval_ckpt.json"
+ },
+ "static": {
+  "correct": 0.5343,
+  "random_theta": 0.01,
+  "zero_theta": 0.0135,
+  "foreign_theta_B": 0.01
+ },
+ "version": {
+  "E_installed_calibrated": 0.5343,
+  "E_trained_on": 0.4787,
+  "E_minus_2": 0.4233,
+  "E_minus_5": 0.3623,
+  "E_first": 0.4162,
+  "random_E": 0.4265,
+  "no_E": 0.5109
+ },
+ "ambiguity_attack": {
+  "adv_samples": 4562,
+  "curve": [
+   [
+    0,
+    0.01
+   ],
+   [
+    50,
+    0.0187
+   ],
+   [
+    100,
+    0.0317
+   ],
+   [
+    150,
+    0.0318
+   ],
+   [
+    200,
+    0.0489
+   ],
+   [
+    250,
+    0.0425
+   ],
+   [
+    300,
+    0.0578
+   ],
+   [
+    350,
+    0.0643
+   ],
+   [
+    400,
+    0.0877
+   ],
+   [
+    450,
+    0.0867
+   ],
+   [
+    500,
+    0.1027
+   ],
+   [
+    550,
+    0.0891
+   ],
+   [
+    600,
+    0.139
+   ],
+   [
+    650,
+    0.1257
+   ],
+   [
+    700,
+    0.1499
+   ],
+   [
+    750,
+    0.1167
+   ],
+   [
+    800,
+    0.1184
+   ],
+   [
+    850,
+    0.1604
+   ],
+   [
+    900,
+    0.1464
+   ],
+   [
+    950,
+    0.1327
+   ],
+   [
+    1000,
+    0.1331
+   ],
+   [
+    1050,
+    0.1626
+   ],
+   [
+    1100,
+    0.1874
+   ],
+   [
+    1150,
+    0.178
+   ],
+   [
+    1200,
+    0.1498
+   ],
+   [
+    1250,
+    0.2093
+   ],
+   [
+    1300,
+    0.2146
+   ],
+   [
+    1350,
+    0.208
+   ],
+   [
+    1400,
+    0.2344
+   ],
+   [
+    1450,
+    0.2161
+   ],
+   [
+    1500,
+    0.2113
+   ],
+   [
+    1550,
+    0.2349
+   ],
+   [
+    1600,
+    0.2291
+   ],
+   [
+    1650,
+    0.2549
+   ],
+   [
+    1700,
+    0.2229
+   ],
+   [
+    1750,
+    0.2173
+   ],
+   [
+    1800,
+    0.2496
+   ],
+   [
+    1850,
+    0.2737
+   ],
+   [
+    1900,
+    0.2969
+   ],
+   [
+    1950,
+    0.2479
+   ],
+   [
+    2000,
+    0.2617
+   ]
+  ]
+ },
+ "substitution": {
+  "stolen_accepted": false,
+  "stolen_reason": "probe check failed: stability",
+  "honest_reason": "ok",
+  "stolen_label_stability": 0.3705179282868526,
+  "honest_accepted": true,
+  "honest_label_stability": 0.7051792828685259,
+  "stolen_proto_ratio": 0.4070459645300901,
+  "honest_proto_ratio": 0.21232199018611458,
+  "honest_proto_ratio_history": {
+   "mean": 0.2567169746941305,
+   "max": 0.6222339435298696
+  }
+ }
+}

@@ -1,0 +1,6 @@
+measure / detector,rate
+Copier detected,100.0%
+Copied honest client accused,100.0%
+False alarms on the other eight honest clients,1.72%
+False alarms over all nine honest clients,12.64%
+Share of all flags falling on a real attacker,46.8%

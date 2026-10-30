@@ -1,0 +1,7 @@
+measure / detector,honest FPR,worst TPR,worst AUC
+maximum of oriented robust,1.04%,100.0%,0.944
+"sum, or mean",0.83%,19.4%,0.423
+maximum after mean,1.88%,4.6%,0.923
+logistic regression,1.25%,74.8%,0.941
+Mahalanobis distance,1.04%,100.0%,0.946
+isolation forest,0.63%,18.8%,0.909

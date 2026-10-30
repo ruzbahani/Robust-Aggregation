@@ -1,0 +1,17 @@
+{
+  "python": "3.13.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.5.2",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.2",
+    "cryptography": "50.0.1",
+    "dilithium-py": "1.4.0",
+    "pytest": "9.1.1"
+  }
+}

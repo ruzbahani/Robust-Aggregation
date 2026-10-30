@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.reproduction/
+data/
+checkpoints/
+results/archives/
+results/archives_rev2/
+results/paired_honest/
+redrawn/

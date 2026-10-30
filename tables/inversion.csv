@@ -1,0 +1,8 @@
+measure / detector,global echo,peer copy,lagged self,AR(2),noise,shrink,echo: delta 0.1,echo: CIFAR-10
+Krum,0.011,0.289,0.498,0.977,0.587,0.012,0.000,0.001
+Coordinate-wise median,0.000,0.244,0.504,0.998,0.621,0.000,0.000,0.000
+Trimmed mean,0.000,0.220,0.499,0.998,0.633,0.000,0.000,0.000
+Two-sided norm bound,1.000,0.427,0.583,0.993,0.504,1.000,1.000,1.000
+Bulyan,0.000,0.241,0.497,0.998,0.674,0.000,0.000,0.000
+"FLTrust, server root set",0.965,0.500,0.134,0.649,0.914,0.500,0.999,0.762
+"FoolsGold, full history",0.500,0.886,0.500,0.500,0.500,0.500,0.500,0.544

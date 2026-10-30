@@ -1,0 +1,319 @@
+{
+  "test_seeds": [
+    "3",
+    "4"
+  ],
+  "nominal_fpr": 0.01,
+  "rows": [
+    {
+      "label": "Payload auditor",
+      "column": "suspicion",
+      "threshold": 3.7859094579543044,
+      "clean_fpr": 0.010416666666666666,
+      "clean_k": 5,
+      "clean_n": 480,
+      "clean_ci": [
+        0.00445735566474467,
+        0.02415007052488164
+      ],
+      "uninvolved_fpr": 0.01029874213836478,
+      "uninvolved_k": 262,
+      "uninvolved_n": 25440,
+      "worst_tpr": 1.0,
+      "worst_auc_test": 0.9444444444444444,
+      "worst_auc_test_excl_copy_source": 0.9998823302469135,
+      "per_attack": {
+        "global_echo": {
+          "tpr": 1.0,
+          "auc_test": 1.0,
+          "auc_test_excl_copy_source": 1.0,
+          "fpr_uninvolved": 0.014351851851851852,
+          "flag_rate_copy_source": null
+        },
+        "peer_copy": {
+          "tpr": 1.0,
+          "auc_test": 0.9444444444444444,
+          "auc_test_excl_copy_source": 1.0,
+          "fpr_uninvolved": 0.0171875,
+          "flag_rate_copy_source": 1.0
+        },
+        "lagged_self": {
+          "tpr": 1.0,
+          "auc_test": 0.9998823302469135,
+          "auc_test_excl_copy_source": 0.9998823302469135,
+          "fpr_uninvolved": 0.010185185185185186,
+          "flag_rate_copy_source": null
+        },
+        "ar2_replay": {
+          "tpr": 1.0,
+          "auc_test": 0.9999652777777778,
+          "auc_test_excl_copy_source": 0.9999652777777778,
+          "fpr_uninvolved": 0.005555555555555556,
+          "flag_rate_copy_source": null
+        },
+        "noise": {
+          "tpr": 1.0,
+          "auc_test": 0.999951774691358,
+          "auc_test_excl_copy_source": 0.999951774691358,
+          "fpr_uninvolved": 0.004861111111111111,
+          "flag_rate_copy_source": null
+        },
+        "shrink": {
+          "tpr": 1.0,
+          "auc_test": 1.0,
+          "auc_test_excl_copy_source": 1.0,
+          "fpr_uninvolved": 0.010416666666666666,
+          "flag_rate_copy_source": null
+        }
+      }
+    },
+    {
+      "label": "Stateful ensemble, 24 families",
+      "column": "ens_stateful",
+      "threshold": 8.38156099408208,
+      "clean_fpr": 0.0125,
+      "clean_k": 6,
+      "clean_n": 480,
+      "clean_ci": [
+        0.0057411122642340474,
+        0.02699989934586194
+      ],
+      "uninvolved_fpr": 0.006761006289308176,
+      "uninvolved_k": 172,
+      "uninvolved_n": 25440,
+      "worst_tpr": 0.14375,
+      "worst_auc_test": 0.9214457947530864,
+      "worst_auc_test_excl_copy_source": 0.9214457947530864,
+      "per_attack": {
+        "global_echo": {
+          "tpr": 0.9583333333333334,
+          "auc_test": 0.9929870756172839,
+          "auc_test_excl_copy_source": 0.9929870756172839,
+          "fpr_uninvolved": 0.0060185185185185185,
+          "flag_rate_copy_source": null
+        },
+        "peer_copy": {
+          "tpr": 0.42291666666666666,
+          "auc_test": 0.9627893518518519,
+          "auc_test_excl_copy_source": 0.9611577690972222,
+          "fpr_uninvolved": 0.0125,
+          "flag_rate_copy_source": 0.00625
+        },
+        "lagged_self": {
+          "tpr": 0.14375,
+          "auc_test": 0.9214457947530864,
+          "auc_test_excl_copy_source": 0.9214457947530864,
+          "fpr_uninvolved": 0.008564814814814815,
+          "flag_rate_copy_source": null
+        },
+        "ar2_replay": {
+          "tpr": 0.9979166666666667,
+          "auc_test": 0.9997636959876544,
+          "auc_test_excl_copy_source": 0.9997636959876544,
+          "fpr_uninvolved": 0.004398148148148148,
+          "flag_rate_copy_source": null
+        },
+        "noise": {
+          "tpr": 0.98125,
+          "auc_test": 0.9991869212962963,
+          "auc_test_excl_copy_source": 0.9991869212962963,
+          "fpr_uninvolved": 0.003703703703703704,
+          "flag_rate_copy_source": null
+        },
+        "shrink": {
+          "tpr": 0.9583333333333334,
+          "auc_test": 0.9931587577160494,
+          "auc_test_excl_copy_source": 0.9931587577160494,
+          "fpr_uninvolved": 0.0060185185185185185,
+          "flag_rate_copy_source": null
+        }
+      }
+    },
+    {
+      "label": "Best single stateful",
+      "column": "tb_maha_pca_burnin_zabs",
+      "threshold": 4.148827690059561,
+      "clean_fpr": 0.01875,
+      "clean_k": 9,
+      "clean_n": 480,
+      "clean_ci": [
+        0.009895177573222579,
+        0.035246590298282435
+      ],
+      "uninvolved_fpr": 0.00845125786163522,
+      "uninvolved_k": 215,
+      "uninvolved_n": 25440,
+      "worst_tpr": 0.15833333333333333,
+      "worst_auc_test": 0.8232339891975309,
+      "worst_auc_test_excl_copy_source": 0.8232339891975309,
+      "per_attack": {
+        "global_echo": {
+          "tpr": 0.17083333333333334,
+          "auc_test": 0.921610725308642,
+          "auc_test_excl_copy_source": 0.921610725308642,
+          "fpr_uninvolved": 0.006944444444444444,
+          "flag_rate_copy_source": null
+        },
+        "peer_copy": {
+          "tpr": 0.15833333333333333,
+          "auc_test": 0.8962090084876544,
+          "auc_test_excl_copy_source": 0.8960666232638889,
+          "fpr_uninvolved": 0.007552083333333333,
+          "flag_rate_copy_source": 0.0020833333333333333
+        },
+        "lagged_self": {
+          "tpr": 0.24791666666666667,
+          "auc_test": 0.9374112654320987,
+          "auc_test_excl_copy_source": 0.9374112654320987,
+          "fpr_uninvolved": 0.010416666666666666,
+          "flag_rate_copy_source": null
+        },
+        "ar2_replay": {
+          "tpr": 0.28541666666666665,
+          "auc_test": 0.8232339891975309,
+          "auc_test_excl_copy_source": 0.8232339891975309,
+          "fpr_uninvolved": 0.011805555555555555,
+          "flag_rate_copy_source": null
+        },
+        "noise": {
+          "tpr": 0.16041666666666668,
+          "auc_test": 0.9170225694444445,
+          "auc_test_excl_copy_source": 0.9170225694444445,
+          "fpr_uninvolved": 0.006944444444444444,
+          "flag_rate_copy_source": null
+        },
+        "shrink": {
+          "tpr": 0.21041666666666667,
+          "auc_test": 0.945559413580247,
+          "auc_test_excl_copy_source": 0.945559413580247,
+          "fpr_uninvolved": 0.006944444444444444,
+          "flag_rate_copy_source": null
+        }
+      }
+    },
+    {
+      "label": "AR(1) residual",
+      "column": "tb_ar1_burnin_zabs",
+      "threshold": 4.459453573845975,
+      "clean_fpr": 0.004166666666666667,
+      "clean_k": 2,
+      "clean_n": 480,
+      "clean_ci": [
+        0.0011433949532137708,
+        0.015063274975003513
+      ],
+      "uninvolved_fpr": 0.0038522012578616352,
+      "uninvolved_k": 98,
+      "uninvolved_n": 25440,
+      "worst_tpr": 0.022916666666666665,
+      "worst_auc_test": 0.4848336226851852,
+      "worst_auc_test_excl_copy_source": 0.4767572699652778,
+      "per_attack": {
+        "global_echo": {
+          "tpr": 0.9583333333333334,
+          "auc_test": 0.9926909722222222,
+          "auc_test_excl_copy_source": 0.9926909722222222,
+          "fpr_uninvolved": 0.003935185185185185,
+          "flag_rate_copy_source": null
+        },
+        "peer_copy": {
+          "tpr": 0.022916666666666665,
+          "auc_test": 0.4848336226851852,
+          "auc_test_excl_copy_source": 0.4767572699652778,
+          "fpr_uninvolved": 0.009114583333333334,
+          "flag_rate_copy_source": 0.0020833333333333333
+        },
+        "lagged_self": {
+          "tpr": 0.04583333333333333,
+          "auc_test": 0.6475096450617284,
+          "auc_test_excl_copy_source": 0.6475096450617284,
+          "fpr_uninvolved": 0.004398148148148148,
+          "flag_rate_copy_source": null
+        },
+        "ar2_replay": {
+          "tpr": 0.9833333333333333,
+          "auc_test": 0.9997164351851852,
+          "auc_test_excl_copy_source": 0.9997164351851852,
+          "fpr_uninvolved": 0.0011574074074074073,
+          "flag_rate_copy_source": null
+        },
+        "noise": {
+          "tpr": 0.95625,
+          "auc_test": 0.9997405478395062,
+          "auc_test_excl_copy_source": 0.9997405478395062,
+          "fpr_uninvolved": 0.0011574074074074073,
+          "flag_rate_copy_source": null
+        },
+        "shrink": {
+          "tpr": 0.9583333333333334,
+          "auc_test": 0.9973476080246915,
+          "auc_test_excl_copy_source": 0.9973476080246915,
+          "fpr_uninvolved": 0.003935185185185185,
+          "flag_rate_copy_source": null
+        }
+      }
+    },
+    {
+      "label": "Ensemble of the six memoryless rules",
+      "column": "ens_stateless",
+      "threshold": 4.611507747071878,
+      "clean_fpr": 0.020833333333333332,
+      "clean_k": 10,
+      "clean_n": 480,
+      "clean_ci": [
+        0.011354857070310935,
+        0.03792049622166375
+      ],
+      "uninvolved_fpr": 0.013718553459119497,
+      "uninvolved_k": 349,
+      "uninvolved_n": 25440,
+      "worst_tpr": 0.010416666666666666,
+      "worst_auc_test": 0.7115412808641975,
+      "worst_auc_test_excl_copy_source": 0.7115412808641975,
+      "per_attack": {
+        "global_echo": {
+          "tpr": 1.0,
+          "auc_test": 1.0,
+          "auc_test_excl_copy_source": 1.0,
+          "fpr_uninvolved": 0.014351851851851852,
+          "flag_rate_copy_source": null
+        },
+        "peer_copy": {
+          "tpr": 1.0,
+          "auc_test": 0.9444405864197531,
+          "auc_test_excl_copy_source": 0.9999956597222222,
+          "fpr_uninvolved": 0.011979166666666667,
+          "flag_rate_copy_source": 1.0
+        },
+        "lagged_self": {
+          "tpr": 0.010416666666666666,
+          "auc_test": 0.7115412808641975,
+          "auc_test_excl_copy_source": 0.7115412808641975,
+          "fpr_uninvolved": 0.016435185185185185,
+          "flag_rate_copy_source": null
+        },
+        "ar2_replay": {
+          "tpr": 0.8895833333333333,
+          "auc_test": 0.9905189043209877,
+          "auc_test_excl_copy_source": 0.9905189043209877,
+          "fpr_uninvolved": 0.009259259259259259,
+          "flag_rate_copy_source": null
+        },
+        "noise": {
+          "tpr": 0.13333333333333333,
+          "auc_test": 0.9344907407407408,
+          "auc_test_excl_copy_source": 0.9344907407407408,
+          "fpr_uninvolved": 0.01597222222222222,
+          "flag_rate_copy_source": null
+        },
+        "shrink": {
+          "tpr": 1.0,
+          "auc_test": 1.0,
+          "auc_test_excl_copy_source": 1.0,
+          "fpr_uninvolved": 0.01412037037037037,
+          "flag_rate_copy_source": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "lag": 3,
+  "configs": {
+    "cifar100_d05": {
+      "client_rounds": 1440,
+      "support_mean": 93.2,
+      "innovation_absent_norm_mean": 0.00013469931202012199,
+      "innovation_absent_norm_max": 0.00019315781829124564,
+      "innovation_present_norm_mean": 39.78189446739425,
+      "rep_absent_norm_mean": 3.915816728972397,
+      "rep_present_norm_mean": 27.93855094972101,
+      "rep_absent_energy_fraction_mean": 0.020965717629514508,
+      "rep_absent_energy_fraction_p90": 0.03443016364134461
+    },
+    "cifar100_d01": {
+      "client_rounds": 960,
+      "support_mean": 54.166666666666664,
+      "innovation_absent_norm_mean": 0.00032639459648501576,
+      "innovation_absent_norm_max": 0.0003965327698435212,
+      "innovation_present_norm_mean": 31.40852095320602,
+      "rep_absent_norm_mean": 12.51145584916551,
+      "rep_present_norm_mean": 20.659032336759882,
+      "rep_absent_energy_fraction_mean": 0.2875356732904131,
+      "rep_absent_energy_fraction_p90": 0.4459402369374588
+    },
+    "cifar10": {
+      "client_rounds": 160,
+      "support_mean": 9.833333333333334,
+      "innovation_absent_norm_mean": 4.997065316578891e-05,
+      "innovation_absent_norm_max": 5.4811366079434874e-05,
+      "innovation_present_norm_mean": 6.826758904394635,
+      "rep_absent_norm_mean": 0.7095988041907864,
+      "rep_present_norm_mean": 5.342222184487701,
+      "rep_absent_energy_fraction_mean": 0.020822660671155447,
+      "rep_absent_energy_fraction_p90": 0.03927097013637264
+    },
+    "maskshard10": {
+      "client_rounds": 320,
+      "support_mean": 10.0,
+      "innovation_absent_norm_mean": 0.0,
+      "innovation_absent_norm_max": 0.0,
+      "innovation_present_norm_mean": 3.8226059612060572,
+      "rep_absent_norm_mean": 21.598775175679794,
+      "rep_present_norm_mean": 6.027313342320861,
+      "rep_absent_energy_fraction_mean": 0.9102486107712473,
+      "rep_absent_energy_fraction_p90": 0.9490607474554247
+    },
+    "maskmix": {
+      "client_rounds": 576,
+      "support_mean": 32.5,
+      "innovation_absent_norm_mean": 0.0004483348668324724,
+      "innovation_absent_norm_max": 0.0005304997603983123,
+      "innovation_present_norm_mean": 11.161852848326008,
+      "rep_absent_norm_mean": 13.581430265159595,
+      "rep_present_norm_mean": 11.954700881258384,
+      "rep_absent_energy_fraction_mean": 0.6025367145942615,
+      "rep_absent_energy_fraction_p90": 0.9448069109819843
+    }
+  }
+}

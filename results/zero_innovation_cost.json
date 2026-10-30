@@ -1,0 +1,304 @@
+{
+ "structural_ratio": 1e-06,
+ "archives": [
+  "arch_cifar100_d01_s0_c10_r35_d0.1_s0.npz",
+  "arch_cifar100_d01_s1_c10_r35_d0.1_s1.npz",
+  "arch_cifar100_d01_s2_c10_r35_d0.1_s2.npz",
+  "arch_cifar100_s0_c10_r35_s0.npz",
+  "arch_cifar100_s1_c10_r35_s1.npz",
+  "arch_cifar100_s2_c10_r35_s2.npz",
+  "arch_cifar100_s3_c10_r35_d0.5_s3.npz",
+  "arch_cifar100_s4_c10_r35_d0.5_s4.npz",
+  "arch_cifar100_s5_c10_r35_d0.5_s5.npz",
+  "arch_cifar100_s6_c10_r35_d0.5_s6.npz",
+  "arch_cifar100_s7_c10_r35_d0.5_s7.npz",
+  "arch_cifar10_s0_c10_r35_d0.5_s0.npz",
+  "arch_cifar10_s1_c10_r35_d0.5_s1.npz",
+  "arch_cifar10_s2_c10_r35_d0.5_s2.npz",
+  "arch_cohort05_s0_c5_r35_d0.5_s0.npz",
+  "arch_cohort05_s1_c5_r35_d0.5_s1.npz",
+  "arch_cohort05_s2_c5_r35_d0.5_s2.npz",
+  "arch_cohort20_s0_c20_r35_d0.5_s0.npz",
+  "arch_cohort20_s1_c20_r35_d0.5_s1.npz",
+  "arch_cohort20_s2_c20_r35_d0.5_s2.npz",
+  "arch_cohort40_s0_c40_r35_d0.5_s0.npz",
+  "arch_cohort40_s1_c40_r35_d0.5_s1.npz",
+  "arch_cohort40_s2_c40_r35_d0.5_s2.npz",
+  "arch_late70_s0_c10_r70_d0.5_s0.npz",
+  "arch_late70_s1_c10_r70_d0.5_s1.npz",
+  "arch_late70_s2_c10_r70_d0.5_s2.npz",
+  "arch_maskmix_c10_r35_s0.npz",
+  "arch_maskmix_c10_r35_s1.npz",
+  "arch_maskshard10_c10_r35_s0.npz",
+  "arch_shard05_c10_r35_s0.npz",
+  "arch_shard05_c10_r35_s1.npz",
+  "arch_shard10_c10_r35_s0.npz",
+  "arch_shard10_c10_r35_s1.npz",
+  "arch_shard20_c10_r35_s0.npz",
+  "arch_shard20_c10_r35_s1.npz",
+  "arch_shard40_c10_r35_s0.npz",
+  "arch_shard40_c10_r35_s1.npz"
+ ],
+ "groups": {
+  "cifar10": {
+   "client_rounds": 1020,
+   "min_ratio": 0.5934195566412953,
+   "min_at": {
+    "round": 35,
+    "client": 5
+   },
+   "p0.1": 0.5996338681215407,
+   "p1": 0.6659852366778121,
+   "p5": 0.7349690558613298,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.5934195566412953,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "cifar100": {
+   "client_rounds": 3740,
+   "min_ratio": 0.7711120039442731,
+   "min_at": {
+    "round": 35,
+    "client": 2
+   },
+   "p0.1": 0.7916040737250465,
+   "p1": 0.8407865959036978,
+   "p5": 0.8907395394532974,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.7711120039442731,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "cohort05": {
+   "client_rounds": 510,
+   "min_ratio": 0.8570627801062569,
+   "min_at": {
+    "round": 34,
+    "client": 0
+   },
+   "p0.1": 0.8571691298058507,
+   "p1": 0.878385804481658,
+   "p5": 0.9096512814752263,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.8570627801062569,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "cohort20": {
+   "client_rounds": 2040,
+   "min_ratio": 0.8001485384392284,
+   "min_at": {
+    "round": 15,
+    "client": 12
+   },
+   "p0.1": 0.8235106432089035,
+   "p1": 0.8625293652275831,
+   "p5": 0.9021823479960779,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.823374054045968,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "cohort40": {
+   "client_rounds": 4080,
+   "min_ratio": 0.7382556613382727,
+   "min_at": {
+    "round": 6,
+    "client": 3
+   },
+   "p0.1": 0.7779982959445876,
+   "p1": 0.8246159459902626,
+   "p5": 0.8767386922487127,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.8094435011913773,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "late70": {
+   "client_rounds": 2070,
+   "min_ratio": 0.78770884168675,
+   "min_at": {
+    "round": 63,
+    "client": 4
+   },
+   "p0.1": 0.8071956553236099,
+   "p1": 0.8447597827101797,
+   "p5": 0.8825906648987352,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.8156865381880006,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "maskmix": {
+   "client_rounds": 680,
+   "min_ratio": 0.12943440203283396,
+   "min_at": {
+    "round": 33,
+    "client": 0
+   },
+   "p0.1": 0.13408922408314253,
+   "p1": 0.16157491244252276,
+   "p5": 0.2554996476343267,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.12943440203283396,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "maskshard10": {
+   "client_rounds": 340,
+   "min_ratio": 0.582855028397813,
+   "min_at": {
+    "round": 31,
+    "client": 8
+   },
+   "p0.1": 0.5992621088276939,
+   "p1": 0.6676926452756529,
+   "p5": 0.7706903679733683,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.582855028397813,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "shard05": {
+   "client_rounds": 680,
+   "min_ratio": 0.4513240533614947,
+   "min_at": {
+    "round": 9,
+    "client": 9
+   },
+   "p0.1": 0.4610304647553958,
+   "p1": 0.5417326462506474,
+   "p5": 0.652756423412082,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.5431166396391853,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "shard10": {
+   "client_rounds": 680,
+   "min_ratio": 0.6479766674113272,
+   "min_at": {
+    "round": 28,
+    "client": 0
+   },
+   "p0.1": 0.6489364063675241,
+   "p1": 0.6862340737595019,
+   "p5": 0.7552258587614643,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.7063132767714517,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "shard20": {
+   "client_rounds": 680,
+   "min_ratio": 0.7312854701181628,
+   "min_at": {
+    "round": 32,
+    "client": 6
+   },
+   "p0.1": 0.7663606888718986,
+   "p1": 0.8131118841575062,
+   "p5": 0.8538629099076624,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.7312854701181628,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  },
+  "shard40": {
+   "client_rounds": 680,
+   "min_ratio": 0.8150165355586098,
+   "min_at": {
+    "round": 3,
+    "client": 0
+   },
+   "p0.1": 0.8339687471150591,
+   "p1": 0.8899362334523186,
+   "p5": 0.9265650536476635,
+   "median": 1.0,
+   "last5_rounds_min_ratio": 0.8899529235297677,
+   "count_at_or_below": {
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.01": 0,
+    "0.1": 0
+   }
+  }
+ },
+ "all": {
+  "client_rounds": 17200,
+  "min_ratio": 0.12943440203283396,
+  "min_at": {
+   "round": 33,
+   "client": 0
+  },
+  "p0.1": 0.2015014620619008,
+  "p1": 0.5254696202546323,
+  "p5": 0.836836242795572,
+  "median": 1.0,
+  "last5_rounds_min_ratio": 0.8156865381880006,
+  "count_at_or_below": {
+   "1e-06": 0,
+   "0.0001": 0,
+   "0.001": 0,
+   "0.01": 0,
+   "0.1": 0
+  }
+ }
+}

@@ -1,0 +1,7 @@
+measure / detector,beta 0,beta 0.5,beta 1,beta 2
+Payload auditor alone,1.000,1.000,0.515,0.514
+"Fused, maximum of seven",1.000,0.999,0.498,0.506
+"Fused, weighted sum",1.000,0.812,0.074,0.135
+"Fused, two-of-seven",1.000,1.000,0.418,0.452
+"Beacon, three of five",1.000,0.988,0.114,0.063
+TPR,100%,100%,0%,0%

@@ -1,0 +1,742 @@
+{
+  "format": 1,
+  "tables": {
+    "inversion": {
+      "title": "Robust contribution rankings",
+      "columns": [
+        "global echo",
+        "peer copy",
+        "lagged self",
+        "AR(2)",
+        "noise",
+        "shrink",
+        "echo: delta 0.1",
+        "echo: CIFAR-10"
+      ],
+      "rows": {
+        "Krum": [
+          "0.011",
+          "0.289",
+          "0.498",
+          "0.977",
+          "0.587",
+          "0.012",
+          "0.000",
+          "0.001"
+        ],
+        "Coordinate-wise median": [
+          "0.000",
+          "0.244",
+          "0.504",
+          "0.998",
+          "0.621",
+          "0.000",
+          "0.000",
+          "0.000"
+        ],
+        "Trimmed mean": [
+          "0.000",
+          "0.220",
+          "0.499",
+          "0.998",
+          "0.633",
+          "0.000",
+          "0.000",
+          "0.000"
+        ],
+        "Two-sided norm bound": [
+          "1.000",
+          "0.427",
+          "0.583",
+          "0.993",
+          "0.504",
+          "1.000",
+          "1.000",
+          "1.000"
+        ],
+        "Bulyan": [
+          "0.000",
+          "0.241",
+          "0.497",
+          "0.998",
+          "0.674",
+          "0.000",
+          "0.000",
+          "0.000"
+        ],
+        "FLTrust, server root set": [
+          "0.965",
+          "0.500",
+          "0.134",
+          "0.649",
+          "0.914",
+          "0.500",
+          "0.999",
+          "0.762"
+        ],
+        "FoolsGold, full history": [
+          "0.500",
+          "0.886",
+          "0.500",
+          "0.500",
+          "0.500",
+          "0.500",
+          "0.500",
+          "0.544"
+        ]
+      }
+    },
+    "operating": {
+      "title": "Frozen operating point",
+      "columns": [
+        "worst TPR (clean FPR), nominal 10%",
+        "nominal 5%",
+        "nominal 1%",
+        "nominal 0.5%",
+        "worst AUC",
+        "AUC excluding copy source"
+      ],
+      "rows": {
+        "Payload auditor": [
+          "100.0 (13.4)",
+          "100.0 (5.9)",
+          "100.0 (1.33)",
+          "100.0 (1.08)",
+          "0.944",
+          "1.000"
+        ],
+        "Without structural tier": [
+          "91.7 (13.4)",
+          "91.7 (5.9)",
+          "85.3 (1.33)",
+          "81.0 (1.08)",
+          "0.912",
+          "0.912"
+        ],
+        "Stateful ensemble, 24 families": [
+          "85.3 (12.3)",
+          "58.4 (4.0)",
+          "23.2 (1.00)",
+          "22.5 (0.83)",
+          "0.948",
+          "0.948"
+        ],
+        "Causal fits only": [
+          "57.8 (11.2)",
+          "37.1 (3.8)",
+          "15.9 (1.17)",
+          "12.4 (0.83)",
+          "0.835",
+          "0.829"
+        ],
+        "Burn-in fits only": [
+          "60.3 (12.9)",
+          "34.3 (5.3)",
+          "8.8 (0.58)",
+          "8.3 (0.58)",
+          "0.864",
+          "0.864"
+        ],
+        "Single stateful, CAL-selected": [
+          "61.3 (9.1)",
+          "50.8 (3.8)",
+          "18.7 (1.25)",
+          "13.8 (0.58)",
+          "0.839",
+          "0.839"
+        ],
+        "AR(1) residual": [
+          "10.5 (10.8)",
+          "7.1 (4.7)",
+          "3.3 (0.75)",
+          "0.3 (0.25)",
+          "0.471",
+          "0.463"
+        ],
+        "Six memoryless rules": [
+          "37.0 (11.0)",
+          "17.5 (6.3)",
+          "3.4 (2.42)",
+          "1.8 (1.33)",
+          "0.752",
+          "0.752"
+        ],
+        "Stateful + memoryless": [
+          "84.2 (14.3)",
+          "55.0 (4.3)",
+          "22.8 (1.08)",
+          "9.6 (0.58)",
+          "0.940",
+          "0.940"
+        ],
+        "Stateful + FoolsGold": [
+          "85.3 (12.3)",
+          "58.4 (4.0)",
+          "23.2 (1.00)",
+          "22.5 (0.83)",
+          "0.945",
+          "0.948"
+        ],
+        "Stateful + memoryless + FoolsGold": [
+          "84.2 (14.3)",
+          "55.0 (4.3)",
+          "22.8 (1.08)",
+          "9.6 (0.58)",
+          "0.940",
+          "0.940"
+        ],
+        "Stateful + x": [
+          "85.3 (12.3)",
+          "58.4 (4.0)",
+          "23.2 (1.00)",
+          "22.5 (0.83)",
+          "0.945",
+          "0.948"
+        ],
+        "Stateful + x + rep": [
+          "98.2 (12.4)",
+          "97.4 (4.0)",
+          "79.9 (1.00)",
+          "78.2 (0.83)",
+          "0.945",
+          "0.994"
+        ]
+      }
+    },
+    "peercopy": {
+      "title": "Copy attribution",
+      "columns": [
+        "rate"
+      ],
+      "rows": {
+        "Copier detected": [
+          "100.0%"
+        ],
+        "Copied honest client accused": [
+          "100.0%"
+        ],
+        "False alarms on the other eight honest clients": [
+          "1.72%"
+        ],
+        "False alarms over all nine honest clients": [
+          "12.64%"
+        ],
+        "Share of all flags falling on a real attacker": [
+          "46.8%"
+        ]
+      }
+    },
+    "passport": {
+      "title": "Passport binding",
+      "columns": [
+        "value"
+      ],
+      "rows": {
+        "Prototype accuracy, correct passport": [
+          "0.5343"
+        ],
+        "random passport (three draws)": [
+          "0.0100"
+        ],
+        "zero passport": [
+          "0.0135"
+        ],
+        "the other client's passport": [
+          "0.0100"
+        ],
+        "chance at K=100": [
+          "0.0100"
+        ],
+        "Ambiguity attack, 20% of data, 2000 steps": [
+          "0.2617"
+        ],
+        "Passport entries": [
+          "401,408"
+        ],
+        "Independent constraints, without / with the 24 branch scales": [
+          "7,168 / 7,144"
+        ],
+        "Nullspace of the installation map": [
+          "98.21%"
+        ],
+        "Invariant family (eps=0): nullspace and 24 positive scales": [
+          "98.22%"
+        ],
+        "Prototype accuracy, original then distribution-matched forgery": [
+          "0.5343, 0.5343"
+        ],
+        "Predictions changed by any nullspace forgery, of 10,000": [
+          "0"
+        ],
+        "Max logit shift in float64, forgery; floor": [
+          "4.4e-13; 1.4e-13"
+        ],
+        "Max logit shift, forgery stored in float32": [
+          "1.0e-06"
+        ],
+        "Accuracy under the current head E^R": [
+          "0.5343"
+        ],
+        "the head of the last training round, E^(R-1)": [
+          "0.4787"
+        ],
+        "older genuine heads": [
+          "0.3623-0.4232"
+        ],
+        "a random head": [
+          "0.4145"
+        ],
+        "the term removed (z=0)": [
+          "0.5111"
+        ],
+        "a forged passport under E^R": [
+          "0.5343"
+        ],
+        "Predictions changed, forged vs genuine passport under one head (8 pairs)": [
+          "0"
+        ]
+      }
+    },
+    "combination": {
+      "title": "Standardization",
+      "columns": [
+        "max raw",
+        "per-statistic",
+        "max robust z"
+      ],
+      "rows": {
+        "realized honest FPR": [
+          "1.88%",
+          "2.08%",
+          "1.04%"
+        ],
+        "global echo": [
+          "100.0%",
+          "100.0%",
+          "100.0%"
+        ],
+        "peer copy": [
+          "100.0%",
+          "100.0%",
+          "100.0%"
+        ],
+        "lagged self": [
+          "0.0%",
+          "100.0%",
+          "100.0%"
+        ],
+        "AR(2) replay": [
+          "0.0%",
+          "3.1%",
+          "100.0%"
+        ],
+        "noise": [
+          "0.0%",
+          "3.1%",
+          "100.0%"
+        ],
+        "shrink": [
+          "100.0%",
+          "100.0%",
+          "100.0%"
+        ],
+        "worst case": [
+          "0.0%",
+          "3.1%",
+          "100.0%"
+        ]
+      }
+    },
+    "combiners": {
+      "title": "Alternative combiners",
+      "columns": [
+        "honest FPR",
+        "worst TPR",
+        "worst AUC"
+      ],
+      "rows": {
+        "maximum of oriented robust": [
+          "1.04%",
+          "100.0%",
+          "0.944"
+        ],
+        "sum, or mean": [
+          "0.83%",
+          "19.4%",
+          "0.423"
+        ],
+        "maximum after mean": [
+          "1.88%",
+          "4.6%",
+          "0.923"
+        ],
+        "logistic regression": [
+          "1.25%",
+          "74.8%",
+          "0.941"
+        ],
+        "Mahalanobis distance": [
+          "1.04%",
+          "100.0%",
+          "0.946"
+        ],
+        "isolation forest": [
+          "0.63%",
+          "18.8%",
+          "0.909"
+        ]
+      }
+    },
+    "adaptive": {
+      "title": "Adaptive grid",
+      "columns": [
+        "beta 0",
+        "beta 0.5",
+        "beta 1",
+        "beta 2"
+      ],
+      "rows": {
+        "Payload auditor alone": [
+          "1.000",
+          "1.000",
+          "0.515",
+          "0.514"
+        ],
+        "Fused, maximum of seven": [
+          "1.000",
+          "0.999",
+          "0.498",
+          "0.506"
+        ],
+        "Fused, weighted sum": [
+          "1.000",
+          "0.812",
+          "0.074",
+          "0.135"
+        ],
+        "Fused, two-of-seven": [
+          "1.000",
+          "1.000",
+          "0.418",
+          "0.452"
+        ],
+        "Beacon, three of five": [
+          "1.000",
+          "0.988",
+          "0.114",
+          "0.063"
+        ],
+        "TPR": [
+          "100%",
+          "100%",
+          "0%",
+          "0%"
+        ]
+      }
+    },
+    "effort": {
+      "title": "Real training effort",
+      "columns": [
+        "steps",
+        "innovation ratio",
+        "auditor AUC",
+        "auditor TPR",
+        "norm-bound AUC",
+        "Krum AUC",
+        "median AUC"
+      ],
+      "rows": {
+        "shrink, scale 0.1": [
+          "142/142",
+          "0.100",
+          "1.000",
+          "1.000",
+          "1.000",
+          "0.012",
+          "0.000"
+        ],
+        "trains a tenth": [
+          "14/142",
+          "0.933",
+          "0.896 ± 0.035",
+          "0.194 ± 0.024",
+          "0.675 ± 0.229",
+          "0.354 ± 0.065",
+          "0.249 ± 0.112"
+        ],
+        "trains half": [
+          "71/142",
+          "0.936",
+          "0.799 ± 0.074",
+          "0.069 ± 0.064",
+          "0.656 ± 0.298",
+          "0.378 ± 0.063",
+          "0.282 ± 0.132"
+        ],
+        "forward passes only": [
+          "0/142",
+          "0.906",
+          "0.995 ± 0.004",
+          "0.958 ± 0.000",
+          "0.764 ± 0.326",
+          "0.339 ± 0.061",
+          "0.217 ± 0.115"
+        ],
+        "no computation": [
+          "0/142",
+          "0.911",
+          "0.999 ± 0.001",
+          "0.958 ± 0.000",
+          "0.734 ± 0.269",
+          "0.339 ± 0.057",
+          "0.216 ± 0.101"
+        ]
+      }
+    },
+    "effortdecomp": {
+      "title": "Fixed-readout decomposition",
+      "columns": [
+        "movement",
+        "alignment",
+        "innovation"
+      ],
+      "rows": {
+        "0": [
+          "0.000 ± 0.000",
+          "undefined",
+          "0.983 ± 0.006"
+        ],
+        "0.01": [
+          "0.235 ± 0.060",
+          "0.084 ± 0.054",
+          "0.979 ± 0.008"
+        ],
+        "0.02": [
+          "0.433 ± 0.065",
+          "0.172 ± 0.051",
+          "0.985 ± 0.003"
+        ],
+        "0.05": [
+          "0.815 ± 0.050",
+          "0.403 ± 0.029",
+          "0.999 ± 0.006"
+        ],
+        "0.1": [
+          "1.036 ± 0.046",
+          "0.512 ± 0.009",
+          "1.010 ± 0.019"
+        ],
+        "0.2": [
+          "0.990 ± 0.012",
+          "0.492 ± 0.007",
+          "0.991 ± 0.009"
+        ],
+        "0.5": [
+          "1.005 ± 0.034",
+          "0.501 ± 0.010",
+          "1.001 ± 0.026"
+        ],
+        "1": [
+          "1.000 ± 0.000",
+          "1.000 ± 0.000",
+          "1.000 ± 0.000"
+        ]
+      }
+    },
+    "effortsplit": {
+      "title": "Parameter and normalization-statistics split",
+      "columns": [
+        "parameter share",
+        "statistics-only displacement",
+        "alignment, recalibrated statistics",
+        "forward-only movement",
+        "forward-only innovation"
+      ],
+      "rows": {
+        "0": [
+          "undefined",
+          "0.000 ± 0.000",
+          "undefined",
+          "0.000 ± 0.000",
+          "0.983 ± 0.006"
+        ],
+        "0.01": [
+          "1.001 ± 0.017",
+          "0.080 ± 0.018",
+          "0.069 ± 0.018",
+          "0.077 ± 0.016",
+          "0.977 ± 0.005"
+        ],
+        "0.02": [
+          "1.023 ± 0.015",
+          "0.148 ± 0.018",
+          "0.151 ± 0.021",
+          "0.134 ± 0.017",
+          "0.972 ± 0.004"
+        ],
+        "0.05": [
+          "1.015 ± 0.022",
+          "0.293 ± 0.022",
+          "0.335 ± 0.022",
+          "0.241 ± 0.020",
+          "0.974 ± 0.006"
+        ],
+        "0.1": [
+          "1.013 ± 0.028",
+          "0.452 ± 0.037",
+          "0.458 ± 0.004",
+          "0.338 ± 0.017",
+          "0.971 ± 0.010"
+        ],
+        "0.2": [
+          "1.025 ± 0.024",
+          "0.554 ± 0.032",
+          "0.463 ± 0.015",
+          "0.394 ± 0.017",
+          "0.971 ± 0.007"
+        ],
+        "0.5": [
+          "1.015 ± 0.013",
+          "0.674 ± 0.040",
+          "0.513 ± 0.008",
+          "0.398 ± 0.017",
+          "0.968 ± 0.008"
+        ],
+        "1": [
+          "1.023 ± 0.018",
+          "0.759 ± 0.056",
+          "1.000 ± 0.000",
+          "0.404 ± 0.015",
+          "0.971 ± 0.008"
+        ]
+      }
+    },
+    "effortdrivers": {
+      "title": "What flags each reduced-effort client",
+      "columns": [
+        "forward passes only",
+        "no computation",
+        "trains a tenth",
+        "trains half",
+        "no attack"
+      ],
+      "rows": {
+        "flagged / client-rounds": [
+          "69/72",
+          "69/72",
+          "14/72",
+          "5/72",
+          "0/72"
+        ],
+        "statistic attaining the score": [
+          "rep 66, u1 3",
+          "rep 64, u1 5",
+          "u1 11, g 3",
+          "u2 2, g 2, u1 1",
+          "none"
+        ],
+        "AUC of u1 alone": [
+          "0.985",
+          "0.994",
+          "0.867",
+          "0.696",
+          "0.409"
+        ],
+        "AUC of u2 alone": [
+          "0.556",
+          "0.566",
+          "0.542",
+          "0.550",
+          "0.528"
+        ],
+        "AUC of g alone": [
+          "0.901",
+          "0.873",
+          "0.782",
+          "0.794",
+          "0.519"
+        ],
+        "AUC of x alone": [
+          "0.887",
+          "0.912",
+          "0.908",
+          "0.874",
+          "0.612"
+        ],
+        "AUC of rep alone": [
+          "0.986",
+          "0.977",
+          "0.483",
+          "0.505",
+          "0.529"
+        ],
+        "payload step / cohort step": [
+          "0.30–0.35",
+          "0.27–0.32",
+          "1.04–1.22",
+          "1.00–1.05",
+          "0.95–1.03"
+        ],
+        "self-replay distance / cohort step": [
+          "0.30–0.34",
+          "0.26–0.33",
+          "0.93–1.04",
+          "0.97–1.04",
+          "0.97–1.08"
+        ],
+        "absent-row share of squared step": [
+          "0.114–0.179",
+          "0.141–0.206",
+          "0.009–0.015",
+          "0.011–0.017",
+          "0.012–0.020"
+        ],
+        "magnitude change": [
+          "-16.9% to -4.7%",
+          "-12.6% to -4.8%",
+          "-12.7% to -1.6%",
+          "-10.0% to -3.7%",
+          "-5.0% to +1.5%"
+        ],
+        "rank of the fall among 10 clients": [
+          "1, 1, 2",
+          "1, 1, 1",
+          "2, 1, 1",
+          "1, 1, 2",
+          "4, 2, 6"
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "adaptive_costcurve.json": "6d135444fd5b5a06ef9d1c1238b47dfd70759c1a700c3445e0cdf436247b545a",
+    "auditor_statistics.json": "3c666fe3d962984a24272e2511e818c4164e3e3f1cd45e0a9262510b7aae1b1e",
+    "binding_eval_ckpt.json": "8605913c59192571dd31ac9bd2f7b86c4a7397bb8e19ce9faf62df939a70c36b",
+    "bulyan_per_seed.json": "d6351ba4905e9ec908363458285d1e611a5c466c07faa469cdf7dcbe38a48d56",
+    "combination_power.json": "5585de90e529947a439cc89ee6550468dd66e1d8fb9f6a2e1ecb0abde01c4579",
+    "combined_grid.json": "13e79dd72b8d1e1711bd8ba5d58b9f446c0fcdbea59fbfb6045f1c2f22d77918",
+    "effort_decomposition_bn.json": "3483d32e09c08498d41a707bbe8efabae2a95c572d53070af773865cee064eca",
+    "faithful_baselines_cifar10.json": "d1226a93cc62057503859535651a50ef990ec400b144dfa85f999e2a51fd0641",
+    "faithful_baselines_cifar100_d01.json": "139bb4d1e0678a933d514b45a50e494c13bbc1a93d6f2cb2c92e66b6d3bf8523",
+    "faithful_baselines_cifar100_d05.json": "d9897da278864c9b0f1462d32eed77630bd537356575e37818930f8b79e99e1f",
+    "feature_combination.json": "4e8400aceb8ebf9f7f1880ab685a0cea8e9a72fe98ac622325c72b9a4a99d7f4",
+    "identity_swap.json": "93d17117fe3f44c25963748f79d6a8bf79e4a21cce52cb5a2a4056bc5bebef12",
+    "innovation_cifar100_d01_s0.json": "aeca1c65b4fa8ea24132d8b6016902d9eb87b32450591fd3be7c66b454dc27e4",
+    "innovation_cifar100_d01_s1.json": "9ca1d29b69e170678e84801dd2c8327c0294dfaf08c72772211311adbfa697f5",
+    "innovation_cifar100_d01_s2.json": "9821c88d7d69a09a57a4ce98d2f312f26cb2fc13d553d48fb7572cbb342b2c23",
+    "innovation_cifar100_s0.json": "4e6f55b454e5651e76da0c43df4f92e754339e3a4b6ecb5c89d877dfcceff36e",
+    "innovation_cifar100_s1.json": "f3e283e00e7f29b7945bea913b5276b2ec1ff4d7e953b8f1c73c8aa8295902b1",
+    "innovation_cifar100_s2.json": "797314defe8a65d368e954f1641f349aa690e580eb35deadf0450b4ad7a5588c",
+    "innovation_cifar100_s3.json": "716d645a1e4614c92a0ed1c09ee25a38e01602fdc6583f39963bb23f31cb0874",
+    "innovation_cifar100_s4.json": "af0cc074938147c19ac83a2f52795712edc4c16f0ac382c360133fe32de2a32d",
+    "innovation_cifar10_s0.json": "cbf98b2d6d0ff07533c4f081328a920a45448104b462c53c17e67e524251e829",
+    "innovation_cifar10_s1.json": "6fa1d8161c47d6d7af3bbf6bc49420466a768f5161a0dca70f202fa7de944400",
+    "innovation_cifar10_s2.json": "3e32f61995fc938f647a8cfd5ef9c895d7c7720d3ea6aa293b7c857fce523ff8",
+    "operating_table.json": "514b56e174fbd3cc64c2554476c4d69839096fd5c3c3a6911036dface0aea714",
+    "passport_equivalence_binding.json": "4272cdca8c0a8afb3aa4dc0e1d03cf201eaf4e67f985c31afb65ed07716d98e8",
+    "reduced_effort_drivers.json": "6c5fa37e2495be129fb7acd5f1aed0b48a4e86b66c2f1c25242f04bcfffd6c8f",
+    "reduced_effort_summary.json": "efbc57e59ce53ece390ff56e2c1186cc3dce4fce89308e6cc913d5cd33761cce",
+    "reduced_effort_summary_modes.json": "0ba15cfaee4a3baa86c694bf625c8341ad299bd4afc03555910b33020801bb8b",
+    "unpredictable_eval.json": "586e35fe9503645c3b1b0d27f754e86c484a4a6c11e07f76cf593620a4abf821"
+  }
+}

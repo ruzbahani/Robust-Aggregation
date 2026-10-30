@@ -1,0 +1,9 @@
+measure / detector,max raw,per-statistic,max robust z
+realized honest FPR,1.88%,2.08%,1.04%
+global echo,100.0%,100.0%,100.0%
+peer copy,100.0%,100.0%,100.0%
+lagged self,0.0%,100.0%,100.0%
+AR(2) replay,0.0%,3.1%,100.0%
+noise,0.0%,3.1%,100.0%
+shrink,100.0%,100.0%,100.0%
+worst case,0.0%,3.1%,100.0%

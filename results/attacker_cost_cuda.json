@@ -1,0 +1,37 @@
+{
+  "device": "cuda",
+  "local_epochs": 2,
+  "examples_in_partition": 4527,
+  "solver": {
+    "basis_steps": 80,
+    "full_steps": 80,
+    "restarts": 3,
+    "beta": 1.0
+  },
+  "attacker_craft_seconds": {
+    "median": 0.9040442000259645,
+    "min": 0.8996973999892361,
+    "max": 1.422258000005968,
+    "n": 5
+  },
+  "honest_local_train_seconds": {
+    "median": 2.750651399954222,
+    "min": 2.740736600011587,
+    "max": 2.917092599964235,
+    "n": 5
+  },
+  "honest_over_attacker": 3.0426072086688043,
+  "hardware": {
+    "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor",
+    "logical_cores": 32,
+    "torch_threads": 16,
+    "honest_device": "cuda",
+    "attacker_device": "cpu",
+    "python": "3.13.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  }
+}

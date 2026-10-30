@@ -1,0 +1,612 @@
+{
+ "config": {
+  "protocol": [
+   "results/protocol_eval_hetero.json",
+   "results/protocol_eval_fedtgp_lam1.json",
+   "results/protocol_eval_fedtgp_lam10.json",
+   "results/protocol_eval_fedtgp_lam01.json",
+   "results/protocol_eval_fedtgp_lam01_r60.json",
+   "results/protocol_eval_fedtgp_lam01_euc.json"
+  ],
+  "results_dir": "results",
+  "tol": 1e-05,
+  "exempt": [
+   "noise"
+  ],
+  "archive_name_pattern": "arch_(.+?)_c\\d+_r\\d+(?:_d[0-9.]+)?_s\\d+\\.npz$"
+ },
+ "meta": {
+  "command": "python experiments/rev2_auc_cross_check.py --protocol results/protocol_eval_hetero.json results/protocol_eval_fedtgp_lam1.json results/protocol_eval_fedtgp_lam10.json results/protocol_eval_fedtgp_lam01.json results/protocol_eval_fedtgp_lam01_r60.json results/protocol_eval_fedtgp_lam01_euc.json --out results/rev2_auc_cross_check.json",
+  "tolerance": 1e-05,
+  "exempt": [
+   "noise"
+  ],
+  "environment": {
+   "python": "3.13.13",
+   "platform": "Windows-11-10.0.26200-SP0",
+   "numpy": "2.4.6",
+   "torch": "2.11.0+cu128",
+   "cuda": "12.8",
+   "gpu": "NVIDIA GeForce RTX 5090"
+  }
+ },
+ "files": {
+  "protocol_eval_hetero.json": {
+   "protocol_file": "protocol_eval_hetero.json",
+   "seeds": {
+    "3": {
+     "archive": "arch_hetero_s3_c10_r35_d0.5_s3.npz",
+     "reference": "innovation_hetero_s3.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.9444386574074074,
+       "auc_published": 0.9444386574074074,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9937239583333334,
+       "auc_published": 0.9937239583333334,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9987384259259259,
+       "auc_published": 0.9987384259259259,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 0.9999768518518518,
+       "auc_published": 0.9999768518518518,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    },
+    "4": {
+     "archive": "arch_hetero_s4_c10_r35_d0.5_s4.npz",
+     "reference": "innovation_hetero_s4.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.9446826774691358,
+       "auc_published": 0.9446826774691358,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9926813271604938,
+       "auc_published": 0.9926813271604938,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9946778549382717,
+       "auc_published": 0.9946778549382717,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    }
+   },
+   "ok": true,
+   "problems": [],
+   "max_abs_delta": 0.0,
+   "max_abs_delta_pairs": 0.0,
+   "max_abs_delta_noise": 0.0
+  },
+  "protocol_eval_fedtgp_lam1.json": {
+   "protocol_file": "protocol_eval_fedtgp_lam1.json",
+   "seeds": {
+    "3": {
+     "archive": "arch_fedtgp_lam1_s3_c10_r35_d0.5_s3.npz",
+     "reference": "innovation_fedtgp_lam1_s3.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.8202970679012346,
+       "auc_published": 0.8202951388888889,
+       "delta": 1.9290123456361385e-06,
+       "delta_pairs": 0.9999999999777742
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9972434413580247,
+       "auc_published": 0.9972434413580247,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9966242283950617,
+       "auc_published": 0.9966242283950617,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 0.9994000771604938,
+       "auc_published": 0.9994155092592593,
+       "delta": -1.5432098765422175e-05,
+       "delta_pairs": 7.999999999994856
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    },
+    "4": {
+     "archive": "arch_fedtgp_lam1_s4_c10_r35_d0.5_s4.npz",
+     "reference": "innovation_fedtgp_lam1_s4.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.8541396604938272,
+       "auc_published": 0.8541396604938272,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9976967592592593,
+       "auc_published": 0.9976967592592593,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9993036265432099,
+       "auc_published": 0.9993036265432099,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    }
+   },
+   "ok": true,
+   "problems": [],
+   "max_abs_delta": 1.9290123456361385e-06,
+   "max_abs_delta_pairs": 0.9999999999777742,
+   "max_abs_delta_noise": 1.5432098765422175e-05
+  },
+  "protocol_eval_fedtgp_lam10.json": {
+   "protocol_file": "protocol_eval_fedtgp_lam10.json",
+   "seeds": {
+    "3": {
+     "archive": "arch_fedtgp_lam10_s3_c10_r35_d0.5_s3.npz",
+     "reference": "innovation_fedtgp_lam10_s3.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.8495997299382716,
+       "auc_published": 0.8495997299382716,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9979359567901235,
+       "auc_published": 0.9979359567901235,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9967033179012346,
+       "auc_published": 0.9967033179012346,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 0.9990721450617284,
+       "auc_published": 0.9994155092592593,
+       "delta": -0.0003433641975308932,
+       "delta_pairs": 178.00000000001504
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    },
+    "4": {
+     "archive": "arch_fedtgp_lam10_s4_c10_r35_d0.5_s4.npz",
+     "reference": "innovation_fedtgp_lam10_s4.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.8588811728395062,
+       "auc_published": 0.8588850308641975,
+       "delta": -3.858024691383299e-06,
+       "delta_pairs": 2.0000000000131024
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9959413580246913,
+       "auc_published": 0.9959413580246913,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9960590277777778,
+       "auc_published": 0.9960590277777778,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 0.9974189814814814,
+       "auc_published": 0.9974151234567902,
+       "delta": 3.858024691272277e-06,
+       "delta_pairs": 1.9999999999555484
+      },
+      "shrink": {
+       "auc_recomputed": 0.9993923611111111,
+       "auc_published": 0.9993923611111111,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    }
+   },
+   "ok": true,
+   "problems": [],
+   "max_abs_delta": 3.858024691383299e-06,
+   "max_abs_delta_pairs": 2.0000000000131024,
+   "max_abs_delta_noise": 0.0003433641975308932
+  },
+  "protocol_eval_fedtgp_lam01.json": {
+   "protocol_file": "protocol_eval_fedtgp_lam01.json",
+   "seeds": {
+    "3": {
+     "archive": "arch_fedtgp_lam01_s3_c10_r35_d0.5_s3.npz",
+     "reference": "innovation_fedtgp_lam01_s3.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.9207417052469136,
+       "auc_published": 0.9207417052469136,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9965895061728395,
+       "auc_published": 0.9965895061728395,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9985744598765433,
+       "auc_published": 0.9985744598765433,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    },
+    "4": {
+     "archive": "arch_fedtgp_lam01_s4_c10_r35_d0.5_s4.npz",
+     "reference": "innovation_fedtgp_lam01_s4.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.9089506172839507,
+       "auc_published": 0.9089506172839507,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9955594135802469,
+       "auc_published": 0.9955594135802469,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9988773148148148,
+       "auc_published": 0.9988773148148148,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    }
+   },
+   "ok": true,
+   "problems": [],
+   "max_abs_delta": 0.0,
+   "max_abs_delta_pairs": 0.0,
+   "max_abs_delta_noise": 0.0
+  },
+  "protocol_eval_fedtgp_lam01_r60.json": {
+   "protocol_file": "protocol_eval_fedtgp_lam01_r60.json",
+   "seeds": {
+    "3": {
+     "archive": "arch_fedtgp_lam01_r60_s3_c10_r60_d0.5_s3.npz",
+     "reference": "innovation_fedtgp_lam01_r60_s3.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.9151721504928502,
+       "auc_published": 0.9151721504928502,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.958009162848813,
+       "auc_published": 0.958009162848813,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9966180758017493,
+       "auc_published": 0.9966180758017493,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 0.9999986116895738,
+       "auc_published": 0.9999972233791475,
+       "delta": 1.3883104262868429e-06,
+       "delta_pairs": 3.0000000001632388
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    },
+    "4": {
+     "archive": "arch_fedtgp_lam01_r60_s4_c10_r60_d0.5_s4.npz",
+     "reference": "innovation_fedtgp_lam01_r60_s4.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.9076912397612106,
+       "auc_published": 0.9076912397612106,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9658970799204035,
+       "auc_published": 0.9658970799204035,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9992137535286223,
+       "auc_published": 0.9992137535286223,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    }
+   },
+   "ok": true,
+   "problems": [],
+   "max_abs_delta": 0.0,
+   "max_abs_delta_pairs": 0.0,
+   "max_abs_delta_noise": 1.3883104262868429e-06
+  },
+  "protocol_eval_fedtgp_lam01_euc.json": {
+   "protocol_file": "protocol_eval_fedtgp_lam01_euc.json",
+   "seeds": {
+    "3": {
+     "archive": "arch_fedtgp_lam01_euc_s3_c10_r35_d0.5_s3.npz",
+     "reference": "innovation_fedtgp_lam01_euc_s3.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.8823582175925926,
+       "auc_published": 0.8823591820987654,
+       "delta": -9.645061728180693e-07,
+       "delta_pairs": 0.4999999999888871
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9984394290123457,
+       "auc_published": 0.9984394290123457,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.999386574074074,
+       "auc_published": 0.999386574074074,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 0.9999961419753086,
+       "auc_published": 0.9999961419753086,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    },
+    "4": {
+     "archive": "arch_fedtgp_lam01_euc_s4_c10_r35_d0.5_s4.npz",
+     "reference": "innovation_fedtgp_lam01_euc_s4.json",
+     "attacks": {
+      "global_echo": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "peer_copy": {
+       "auc_recomputed": 0.8877623456790124,
+       "auc_published": 0.8877575231481482,
+       "delta": 4.822530864201369e-06,
+       "delta_pairs": 2.5000000000019895
+      },
+      "lagged_self": {
+       "auc_recomputed": 0.9986921296296296,
+       "auc_published": 0.9986921296296296,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "ar2_replay": {
+       "auc_recomputed": 0.9994502314814815,
+       "auc_published": 0.9994502314814815,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      },
+      "noise": {
+       "auc_recomputed": 0.9999498456790124,
+       "auc_published": 0.9999479166666667,
+       "delta": 1.9290123456361385e-06,
+       "delta_pairs": 0.9999999999777742
+      },
+      "shrink": {
+       "auc_recomputed": 1.0,
+       "auc_published": 1.0,
+       "delta": 0.0,
+       "delta_pairs": 0.0
+      }
+     },
+     "reference_found": true
+    }
+   },
+   "ok": true,
+   "problems": [],
+   "max_abs_delta": 4.822530864201369e-06,
+   "max_abs_delta_pairs": 2.5000000000019895,
+   "max_abs_delta_noise": 1.9290123456361385e-06
+  }
+ },
+ "all_ok": true
+}

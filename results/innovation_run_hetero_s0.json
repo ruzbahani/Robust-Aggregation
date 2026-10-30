@@ -1,0 +1,188 @@
+{
+ "meta": {
+  "command": "python experiments/innovation_eval.py --tag hetero_s0 --seed 0 --clients 10 --rounds 35 --dirichlet 0.5 --dataset cifar100 --num-classes 100 --attack-start 12 --eval-from 12 --no-passport --arch-group hetero4 --archive-dir results/archives_rev2 --device cuda",
+  "environment": {
+   "python": "3.13.13",
+   "platform": "Windows-11-10.0.26200-SP0",
+   "numpy": "2.4.6",
+   "torch": "2.11.0+cu128",
+   "cuda": "12.8",
+   "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "archive": "arch_hetero_s0_c10_r35_d0.5_s0.npz"
+ },
+ "config": {
+  "clients": 10,
+  "rounds": 35,
+  "local_epochs": 2,
+  "dirichlet": 0.5,
+  "width": 64,
+  "embed_dim": 128,
+  "num_classes": 100,
+  "attack_start": 12,
+  "eval_from": 12,
+  "dataset": "cifar100",
+  "synthetic": false,
+  "device": "cuda",
+  "seed": 0,
+  "tag": "hetero_s0",
+  "no_cache": false,
+  "no_passport": true,
+  "arch_group": "hetero4",
+  "server": "fedproto",
+  "lam": null,
+  "archive_dir": "results/archives_rev2",
+  "tgp_epochs": 100,
+  "tgp_lr": 0.01,
+  "tgp_batch": 10,
+  "tgp_tau": 100.0,
+  "tgp_hidden": null,
+  "tgp_device": null,
+  "tgp_threads": null,
+  "run_info": false
+ },
+ "federation": {
+  "arch_group": "hetero4",
+  "encoders": [
+   "resnet18_w64",
+   "resnet18_w32",
+   "cnn4",
+   "mobilenetv2",
+   "resnet18_w64",
+   "resnet18_w32",
+   "cnn4",
+   "mobilenetv2",
+   "resnet18_w64",
+   "resnet18_w32"
+  ],
+  "server": "fedproto",
+  "lam": 1.0,
+  "seed": 0,
+  "clients": 10,
+  "rounds": 35,
+  "dirichlet": 0.5
+ },
+ "timing": {
+  "total_s": 1924.9,
+  "round_s": [
+   40.13,
+   39.46,
+   40.53,
+   42.16,
+   42.11,
+   43.62,
+   48.12,
+   51.89,
+   52.31,
+   51.85,
+   56.45,
+   55.76,
+   57.92,
+   57.32,
+   55.32,
+   56.39,
+   55.87,
+   54.6,
+   56.04,
+   57.96,
+   58.23,
+   54.68,
+   53.93,
+   54.49,
+   54.21,
+   54.03,
+   54.7,
+   60.95,
+   62.56,
+   62.01,
+   63.94,
+   63.95,
+   62.05,
+   67.0,
+   78.56
+  ]
+ },
+ "accuracy_final_round": [
+  {
+   "client": 0,
+   "encoder": "resnet18_w64",
+   "params": 11247396,
+   "n_train": 4527,
+   "acc_classifier": 0.2677,
+   "acc_prototype": 0.2551
+  },
+  {
+   "client": 1,
+   "encoder": "resnet18_w32",
+   "params": 2840836,
+   "n_train": 5142,
+   "acc_classifier": 0.2812,
+   "acc_prototype": 0.2475
+  },
+  {
+   "client": 2,
+   "encoder": "cnn4",
+   "params": 951972,
+   "n_train": 5109,
+   "acc_classifier": 0.2165,
+   "acc_prototype": 0.1796
+  },
+  {
+   "client": 3,
+   "encoder": "mobilenetv2",
+   "params": 2400740,
+   "n_train": 4919,
+   "acc_classifier": 0.229,
+   "acc_prototype": 0.2139
+  },
+  {
+   "client": 4,
+   "encoder": "resnet18_w64",
+   "params": 11247396,
+   "n_train": 6032,
+   "acc_classifier": 0.3114,
+   "acc_prototype": 0.2966
+  },
+  {
+   "client": 5,
+   "encoder": "resnet18_w32",
+   "params": 2840836,
+   "n_train": 4837,
+   "acc_classifier": 0.2453,
+   "acc_prototype": 0.2212
+  },
+  {
+   "client": 6,
+   "encoder": "cnn4",
+   "params": 951972,
+   "n_train": 5305,
+   "acc_classifier": 0.2008,
+   "acc_prototype": 0.1729
+  },
+  {
+   "client": 7,
+   "encoder": "mobilenetv2",
+   "params": 2400740,
+   "n_train": 4751,
+   "acc_classifier": 0.2208,
+   "acc_prototype": 0.197
+  },
+  {
+   "client": 8,
+   "encoder": "resnet18_w64",
+   "params": 11247396,
+   "n_train": 5262,
+   "acc_classifier": 0.2855,
+   "acc_prototype": 0.2734
+  },
+  {
+   "client": 9,
+   "encoder": "resnet18_w32",
+   "params": 2840836,
+   "n_train": 4116,
+   "acc_classifier": 0.2342,
+   "acc_prototype": 0.2109
+  }
+ ],
+ "degenerate_rounds": []
+}

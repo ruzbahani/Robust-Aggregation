@@ -1,0 +1,11 @@
+torch==2.11.0
+torchvision==0.26.0
+numpy>=2.0
+matplotlib>=3.8
+cryptography>=42
+dilithium-py>=1.4
+pytest>=8
+jupyter
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6

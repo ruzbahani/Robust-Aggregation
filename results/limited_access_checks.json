@@ -1,0 +1,2182 @@
+{
+ "meta": {
+  "command": "python experiments/limited_access_checks.py",
+  "environment": {
+   "python": "3.13.13",
+   "platform": "Windows-11-10.0.26200-SP0",
+   "numpy": "2.4.6",
+   "torch": "2.11.0+cu128",
+   "cuda": "12.8",
+   "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "wall_s": 118.3,
+  "population": {
+   "seed": 3,
+   "victim": 0,
+   "beta": 1.0,
+   "leak_rounds": [
+    13,
+    30
+   ],
+   "shadow_view_target_seeds": [
+    0,
+    3
+   ],
+   "shadow_seeds": [
+    5,
+    6
+   ]
+  }
+ },
+ "all_passed": true,
+ "results": [
+  {
+   "check": "calibration",
+   "passed": true,
+   "release": {
+    "tau_P": {
+     "refit": 3.7859094579543044,
+     "released": 3.7859094579543044
+    },
+    "tau_F": {
+     "refit": 5.292555152265146,
+     "released": 5.292555152265146
+    },
+    "norm_max_abs_diff": 0.0,
+    "released_fused_suspicion_tau_not_used": 4.475473587206007,
+    "identical": true
+   },
+   "cal_median": {
+    "P": 1.0982903929927175,
+    "F": 1.1562012804751876
+   },
+   "seconds": 0.0
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "decision:16",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.9684871402432202,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.4277860119459513,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 10.180747199978214
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "decision:4",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.9684871402432202,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.4277860119459513,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 10.026104699994903
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "decision:64",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.9684871402432202,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.4277860119459513,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 9.540836700005457
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "delayed:1",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.9684871402432202,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.4277860119459513,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 10.896591400029138
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "delayed:2",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 11,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.208843199669821,
+     "aim": 1.208716290088588
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 28,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.2140223962580234,
+     "aim": 1.2137309288625808
+    }
+   ],
+   "passed": true,
+   "seconds": 9.422626500017941
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "delayed:3",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 10,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.486542022901795,
+     "aim": 1.4865593187244177
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 27,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.3918717620438323,
+     "aim": 1.3986698980530592
+    }
+   ],
+   "passed": true,
+   "seconds": 8.522111299971584
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "feedback",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.5453215781090024,
+     "aim": 1.5454711878212346
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.2141794221661886,
+     "aim": 1.2144312134757167
+    }
+   ],
+   "passed": true,
+   "seconds": 9.779204200021923
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "pseudo",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.1565816470223453,
+     "aim": 1.1562012804751876,
+     "tripwire_crafts": true,
+     "tripwire_error": null
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.1561238197589407,
+     "aim": 1.1562012804751876,
+     "tripwire_crafts": true,
+     "tripwire_error": null
+    }
+   ],
+   "passed": true,
+   "seconds": 12.008201599994209
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "query:16",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 16,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.3163622170354616,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 16,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.15733944943392,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 12.02447880001273
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "query:256",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 39,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.2507885648012267,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 73,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.2921681016892776,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 16.29834960005246
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "query:4",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 4,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.9198201115171418,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 4,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.389136418437832,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 10.291928699996788
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "query:64",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 39,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.2507885648012267,
+     "aim": 1.968537679435162
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 64,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.3013926242928733,
+     "aim": 1.4276829177855628
+    }
+   ],
+   "passed": true,
+   "seconds": 16.528568000008818
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "shadow:5",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 2.5386021064138315,
+     "aim": 2.5384833078501328,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9769642002668953,
+     "budget_unit": 34.85046014013547
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.7702588722866555,
+     "aim": 0.770376890169603,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9769642002668953,
+     "budget_unit": 43.66379815727949
+    }
+   ],
+   "provenance": {
+    "archives_opened": [
+     "arch_cifar100_s5_c10_r35_d0.5_s5.npz"
+    ],
+    "source": "arch_cifar100_s5_c10_r35_d0.5_s5.npz",
+    "shadow_seed": 5,
+    "target_seed": 3,
+    "outside_population": true,
+    "outside_grid_test_seeds": true,
+    "payloads_shared_with_target": 0,
+    "passed": true
+   },
+   "passed": true,
+   "seconds": 15.932790599996224
+  },
+  {
+   "check": "leak",
+   "defense": "F",
+   "level": "shadow:6",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.3245633581652432,
+     "aim": 1.3245332078575087,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9640328483385493,
+     "budget_unit": 34.99276900029396
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.7136592942335818,
+     "aim": 1.7133133680169088,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9640328483385493,
+     "budget_unit": 42.18359564896268
+    }
+   ],
+   "provenance": {
+    "archives_opened": [
+     "arch_cifar100_s6_c10_r35_d0.5_s6.npz"
+    ],
+    "source": "arch_cifar100_s6_c10_r35_d0.5_s6.npz",
+    "shadow_seed": 6,
+    "target_seed": 3,
+    "outside_population": true,
+    "outside_grid_test_seeds": true,
+    "payloads_shared_with_target": 0,
+    "passed": true
+   },
+   "passed": true,
+   "seconds": 14.836418900056742
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "decision:16",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.373199499462237,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.7749952816179458,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 7.885297400003765
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "decision:4",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.373199499462237,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.7749952816179458,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 7.287248799984809
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "decision:64",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.373199499462237,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 1,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.7749952816179458,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 7.147737100021914
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "delayed:1",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.373199499462237,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.7749952816179458,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 7.121801299974322
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "delayed:2",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 11,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.0650060360772817,
+     "aim": 1.0650525526820205
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 28,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.8585994131795509,
+     "aim": 0.8585436360262504
+    }
+   ],
+   "passed": true,
+   "seconds": 7.052024699980393
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "delayed:3",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 10,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.0650329738987434,
+     "aim": 1.065042121540575
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 27,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.950312711611232,
+     "aim": 0.9503116208917738
+    }
+   ],
+   "passed": true,
+   "seconds": 5.401955499954056
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "feedback",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.6118319203874925,
+     "aim": 0.6118510892574784
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.6192172715149405,
+     "aim": 0.6191381666193767
+    }
+   ],
+   "passed": true,
+   "seconds": 6.458295100019313
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "pseudo",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.0988210932334033,
+     "aim": 1.0982903929927175,
+     "tripwire_crafts": true,
+     "tripwire_error": null
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.0982527514948452,
+     "aim": 1.0982903929927175,
+     "tripwire_crafts": true,
+     "tripwire_error": null
+    }
+   ],
+   "passed": true,
+   "seconds": 6.864999099983834
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "query:16",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 16,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.606053098816342,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 16,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.2768988754312465,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 9.25972150004236
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "query:256",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 39,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.6419746488326923,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 31,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.4130056502924393,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 10.354885499982629
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "query:4",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 4,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.7227265145159716,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 4,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 0.7749952816179458,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 7.411124000034761
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "query:64",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 39,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": 12,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.6419746488326923,
+     "aim": 1.3731113733085882
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 31,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": 29,
+      "n_peer_scores": 9
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.4130056502924393,
+     "aim": 0.7749796187022121
+    }
+   ],
+   "passed": true,
+   "seconds": 10.802722899999935
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "shadow:5",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.1447917933436285,
+     "aim": 1.1447379070345292,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9769642002668953,
+     "budget_unit": 34.85046014013547
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.2026753372726517,
+     "aim": 1.2025832632534605,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9769642002668953,
+     "budget_unit": 43.66379815727949
+    }
+   ],
+   "provenance": {
+    "archives_opened": [
+     "arch_cifar100_s5_c10_r35_d0.5_s5.npz"
+    ],
+    "source": "arch_cifar100_s5_c10_r35_d0.5_s5.npz",
+    "shadow_seed": 5,
+    "target_seed": 3,
+    "outside_population": true,
+    "outside_grid_test_seeds": true,
+    "payloads_shared_with_target": 0,
+    "passed": true
+   },
+   "passed": true,
+   "seconds": 11.026316200033762
+  },
+  {
+   "check": "leak",
+   "defense": "P",
+   "level": "shadow:6",
+   "rounds": [
+    {
+     "round": 13,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       12
+      ],
+      "own_rounds": [
+       1,
+       12
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.1395302834203762,
+     "aim": 1.1392511006744124,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9640328483385493,
+     "budget_unit": 34.99276900029396
+    },
+    {
+     "round": 30,
+     "payload_identical": true,
+     "record_identical": true,
+     "information_identical": true,
+     "oracle_calls": 0,
+     "calls_within_Q": true,
+     "control_detected": true,
+     "inventory": {
+      "cbar_rounds": [
+       1,
+       29
+      ],
+      "own_rounds": [
+       1,
+       29
+      ],
+      "peer_latest_round": null,
+      "n_peer_scores": 0
+     },
+     "inventory_as_specified": true,
+     "predicted": 1.048321509278944,
+     "aim": 1.0484604518961445,
+     "tripwire_crafts": true,
+     "tripwire_error": null,
+     "shadow_rho": 0.9640328483385493,
+     "budget_unit": 42.18359564896268
+    }
+   ],
+   "provenance": {
+    "archives_opened": [
+     "arch_cifar100_s6_c10_r35_d0.5_s6.npz"
+    ],
+    "source": "arch_cifar100_s6_c10_r35_d0.5_s6.npz",
+    "shadow_seed": 6,
+    "target_seed": 3,
+    "outside_population": true,
+    "outside_grid_test_seeds": true,
+    "payloads_shared_with_target": 0,
+    "passed": true
+   },
+   "passed": true,
+   "seconds": 12.801632800023071
+  },
+  {
+   "check": "lockstep",
+   "defense": "F",
+   "rounds": 24,
+   "mismatch_rounds": [],
+   "per_round": [
+    {
+     "round": 12,
+     "identical": true,
+     "digest": "bbd327c330b5a2c6"
+    },
+    {
+     "round": 13,
+     "identical": true,
+     "digest": "5490ea9039be49e0"
+    },
+    {
+     "round": 14,
+     "identical": true,
+     "digest": "f85138a7d69a15ee"
+    },
+    {
+     "round": 15,
+     "identical": true,
+     "digest": "641cc7b2952deb6e"
+    },
+    {
+     "round": 16,
+     "identical": true,
+     "digest": "8a371220aadf53b7"
+    },
+    {
+     "round": 17,
+     "identical": true,
+     "digest": "51e283c4ca7c6f51"
+    },
+    {
+     "round": 18,
+     "identical": true,
+     "digest": "0e0c29658e18593d"
+    },
+    {
+     "round": 19,
+     "identical": true,
+     "digest": "cbf389fa193a5e07"
+    },
+    {
+     "round": 20,
+     "identical": true,
+     "digest": "2996848f222dbff6"
+    },
+    {
+     "round": 21,
+     "identical": true,
+     "digest": "6b39b1ace253cf77"
+    },
+    {
+     "round": 22,
+     "identical": true,
+     "digest": "db842fba1d8ff538"
+    },
+    {
+     "round": 23,
+     "identical": true,
+     "digest": "11b1da8c36a62971"
+    },
+    {
+     "round": 24,
+     "identical": true,
+     "digest": "3e50054e28a9d35d"
+    },
+    {
+     "round": 25,
+     "identical": true,
+     "digest": "19a6db450e720015"
+    },
+    {
+     "round": 26,
+     "identical": true,
+     "digest": "1b53f0e477522e73"
+    },
+    {
+     "round": 27,
+     "identical": true,
+     "digest": "d8210eb771110cc8"
+    },
+    {
+     "round": 28,
+     "identical": true,
+     "digest": "7d3eb7fe25a31601"
+    },
+    {
+     "round": 29,
+     "identical": true,
+     "digest": "426850361668ac77"
+    },
+    {
+     "round": 30,
+     "identical": true,
+     "digest": "76987bd24125e3e3"
+    },
+    {
+     "round": 31,
+     "identical": true,
+     "digest": "6481a6fc469a5998"
+    },
+    {
+     "round": 32,
+     "identical": true,
+     "digest": "3d4309470cb7d986"
+    },
+    {
+     "round": 33,
+     "identical": true,
+     "digest": "e1a3a35b563c7e90"
+    },
+    {
+     "round": 34,
+     "identical": true,
+     "digest": "fe76870fed1792b5"
+    },
+    {
+     "round": 35,
+     "identical": true,
+     "digest": "42493b04e7b15ca7"
+    }
+   ],
+   "passed": true,
+   "seconds": 104.08585610002046
+  },
+  {
+   "check": "lockstep",
+   "defense": "P",
+   "rounds": 24,
+   "mismatch_rounds": [],
+   "per_round": [
+    {
+     "round": 12,
+     "identical": true,
+     "digest": "9bca1551bbbb1679"
+    },
+    {
+     "round": 13,
+     "identical": true,
+     "digest": "db59f31cd05114fc"
+    },
+    {
+     "round": 14,
+     "identical": true,
+     "digest": "7bcee549a83a8fc1"
+    },
+    {
+     "round": 15,
+     "identical": true,
+     "digest": "ce4577e98ab95928"
+    },
+    {
+     "round": 16,
+     "identical": true,
+     "digest": "c40f14a5f1a61820"
+    },
+    {
+     "round": 17,
+     "identical": true,
+     "digest": "685330c82f3ab8cb"
+    },
+    {
+     "round": 18,
+     "identical": true,
+     "digest": "3328a8da6e1c7626"
+    },
+    {
+     "round": 19,
+     "identical": true,
+     "digest": "b1ebde2324718baa"
+    },
+    {
+     "round": 20,
+     "identical": true,
+     "digest": "266ed83dc1d646aa"
+    },
+    {
+     "round": 21,
+     "identical": true,
+     "digest": "13bef673b9d472d0"
+    },
+    {
+     "round": 22,
+     "identical": true,
+     "digest": "bec0f9d8923c3e1a"
+    },
+    {
+     "round": 23,
+     "identical": true,
+     "digest": "cbf88eae894dec1d"
+    },
+    {
+     "round": 24,
+     "identical": true,
+     "digest": "ffc7a0edc41ae762"
+    },
+    {
+     "round": 25,
+     "identical": true,
+     "digest": "c9146bbbb70e68e5"
+    },
+    {
+     "round": 26,
+     "identical": true,
+     "digest": "117bd25ef01499bb"
+    },
+    {
+     "round": 27,
+     "identical": true,
+     "digest": "5f4a6cc2435ee462"
+    },
+    {
+     "round": 28,
+     "identical": true,
+     "digest": "997b40b2a45051e9"
+    },
+    {
+     "round": 29,
+     "identical": true,
+     "digest": "ac225e7fbf84c0e2"
+    },
+    {
+     "round": 30,
+     "identical": true,
+     "digest": "63c276d57eee9d37"
+    },
+    {
+     "round": 31,
+     "identical": true,
+     "digest": "e0442155649aa449"
+    },
+    {
+     "round": 32,
+     "identical": true,
+     "digest": "919f06d7c64342b2"
+    },
+    {
+     "round": 33,
+     "identical": true,
+     "digest": "ea46801d8f181bf4"
+    },
+    {
+     "round": 34,
+     "identical": true,
+     "digest": "97feda7e828e7eaf"
+    },
+    {
+     "round": 35,
+     "identical": true,
+     "digest": "235a0f8c09521223"
+    }
+   ],
+   "passed": true,
+   "seconds": 73.50856699998258
+  },
+  {
+   "check": "oracle",
+   "budget_enforced": true,
+   "grid_enforced": true,
+   "state_restored": true,
+   "oracle_equals_real_round": true,
+   "flag_consistent": true,
+   "passed": true,
+   "seconds": 0.6250755999935791
+  },
+  {
+   "check": "passes",
+   "defense": "F",
+   "level": "current",
+   "released_knowledge": "peer_current",
+   "score_matrix_identical": true,
+   "pred_vs_real_mean_abs": [
+    5.0885221961986344e-15,
+    5.0885221961986344e-15
+   ],
+   "seconds": 111.14667210000334,
+   "victim_mean_score": 1.2194416026912955,
+   "passed": true
+  },
+  {
+   "check": "passes",
+   "defense": "F",
+   "level": "delayed:1",
+   "released_knowledge": "peer_lagged",
+   "score_matrix_identical": true,
+   "pred_vs_real_mean_abs": [
+    1.5785433738507058,
+    1.5785433738507058
+   ],
+   "seconds": 107.98897860001307,
+   "victim_mean_score": 2.6739086815718154,
+   "passed": true
+  },
+  {
+   "check": "passes",
+   "defense": "P",
+   "level": "current",
+   "released_knowledge": "peer_current",
+   "score_matrix_identical": true,
+   "pred_vs_real_mean_abs": [
+    3.057739246988452e-15,
+    3.057739246988452e-15
+   ],
+   "seconds": 76.52168239996536,
+   "victim_mean_score": 1.0643135398159729,
+   "passed": true
+  },
+  {
+   "check": "passes",
+   "defense": "P",
+   "level": "delayed:1",
+   "released_knowledge": "peer_lagged",
+   "score_matrix_identical": true,
+   "pred_vs_real_mean_abs": [
+    0.4491282285131348,
+    0.4491282285131348
+   ],
+   "seconds": 75.00574910000432,
+   "victim_mean_score": 1.280536466022978,
+   "passed": true
+  },
+  {
+   "check": "shadow_views",
+   "seed": 0,
+   "level": "shadow:5",
+   "compared": 48,
+   "skipped_seat_undefined": 0,
+   "mismatches": [],
+   "peer_max_rel_diff_vs_build_view": {
+    "peer_I": 0.0,
+    "u1": 5.551115123125783e-16,
+    "u2": 3.3306690738754696e-16,
+    "norm": 0.0,
+    "step": 0.0,
+    "rep_raw": 0.0,
+    "x_const": 0.0,
+    "pool": 0.0,
+    "peer_full": 0.0
+   },
+   "rho_max_rel_diff_independent": 0.0,
+   "scaling_max_abs_err": 0.0,
+   "scores_equal_honest_replay": true,
+   "records_equal_across_defenses": true,
+   "passed": true,
+   "seconds": 8.255758800019976
+  },
+  {
+   "check": "shadow_views",
+   "seed": 3,
+   "level": "shadow:5",
+   "compared": 48,
+   "skipped_seat_undefined": 0,
+   "mismatches": [],
+   "peer_max_rel_diff_vs_build_view": {
+    "peer_I": 0.0,
+    "u1": 5.551115123125783e-16,
+    "u2": 3.3306690738754696e-16,
+    "norm": 0.0,
+    "step": 0.0,
+    "rep_raw": 0.0,
+    "x_const": 0.0,
+    "pool": 0.0,
+    "peer_full": 0.0
+   },
+   "rho_max_rel_diff_independent": 0.0,
+   "scaling_max_abs_err": 0.0,
+   "scores_equal_honest_replay": true,
+   "records_equal_across_defenses": true,
+   "passed": true,
+   "seconds": 7.993292000028305
+  },
+  {
+   "check": "shadow_views",
+   "seed": 0,
+   "level": "shadow:6",
+   "compared": 48,
+   "skipped_seat_undefined": 0,
+   "mismatches": [],
+   "peer_max_rel_diff_vs_build_view": {
+    "peer_I": 0.0,
+    "u1": 4.440892098500626e-16,
+    "u2": 4.440892098500626e-16,
+    "norm": 0.0,
+    "step": 0.0,
+    "rep_raw": 0.0,
+    "x_const": 0.0,
+    "pool": 0.0,
+    "peer_full": 0.0
+   },
+   "rho_max_rel_diff_independent": 0.0,
+   "scaling_max_abs_err": 0.0,
+   "scores_equal_honest_replay": true,
+   "records_equal_across_defenses": true,
+   "passed": true,
+   "seconds": 8.594402900023852
+  },
+  {
+   "check": "shadow_views",
+   "seed": 3,
+   "level": "shadow:6",
+   "compared": 48,
+   "skipped_seat_undefined": 0,
+   "mismatches": [],
+   "peer_max_rel_diff_vs_build_view": {
+    "peer_I": 0.0,
+    "u1": 4.440892098500626e-16,
+    "u2": 4.440892098500626e-16,
+    "norm": 0.0,
+    "step": 0.0,
+    "rep_raw": 0.0,
+    "x_const": 0.0,
+    "pool": 0.0,
+    "peer_full": 0.0
+   },
+   "rho_max_rel_diff_independent": 0.0,
+   "scaling_max_abs_err": 0.0,
+   "scores_equal_honest_replay": true,
+   "records_equal_across_defenses": true,
+   "passed": true,
+   "seconds": 7.607472100004088
+  },
+  {
+   "check": "views",
+   "seed": 0,
+   "compared": 66,
+   "mismatches": [],
+   "passed": true,
+   "seconds": 2.602823299996089
+  },
+  {
+   "check": "views",
+   "seed": 3,
+   "compared": 66,
+   "mismatches": [],
+   "passed": true,
+   "seconds": 2.895672700018622
+  }
+ ]
+}

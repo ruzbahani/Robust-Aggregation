@@ -1,0 +1,13 @@
+measure / detector,forward passes only,no computation,trains a tenth,trains half,no attack
+flagged / client-rounds,69/72,69/72,14/72,5/72,0/72
+statistic attaining the score,"rep 66, u1 3","rep 64, u1 5","u1 11, g 3","u2 2, g 2, u1 1",none
+AUC of u1 alone,0.985,0.994,0.867,0.696,0.409
+AUC of u2 alone,0.556,0.566,0.542,0.550,0.528
+AUC of g alone,0.901,0.873,0.782,0.794,0.519
+AUC of x alone,0.887,0.912,0.908,0.874,0.612
+AUC of rep alone,0.986,0.977,0.483,0.505,0.529
+payload step / cohort step,0.30–0.35,0.27–0.32,1.04–1.22,1.00–1.05,0.95–1.03
+self-replay distance / cohort step,0.30–0.34,0.26–0.33,0.93–1.04,0.97–1.04,0.97–1.08
+absent-row share of squared step,0.114–0.179,0.141–0.206,0.009–0.015,0.011–0.017,0.012–0.020
+magnitude change,-16.9% to -4.7%,-12.6% to -4.8%,-12.7% to -1.6%,-10.0% to -3.7%,-5.0% to +1.5%
+rank of the fall among 10 clients,"1, 1, 2","1, 1, 1","2, 1, 1","1, 1, 2","4, 2, 6"

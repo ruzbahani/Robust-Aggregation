@@ -1,0 +1,22 @@
+measure / detector,value
+"Prototype accuracy, correct passport",0.5343
+random passport (three draws),0.0100
+zero passport,0.0135
+the other client's passport,0.0100
+chance at K=100,0.0100
+"Ambiguity attack, 20% of data, 2000 steps",0.2617
+Passport entries,"401,408"
+"Independent constraints, without / with the 24 branch scales","7,168 / 7,144"
+Nullspace of the installation map,98.21%
+Invariant family (eps=0): nullspace and 24 positive scales,98.22%
+"Prototype accuracy, original then distribution-matched forgery","0.5343, 0.5343"
+"Predictions changed by any nullspace forgery, of 10,000",0
+"Max logit shift in float64, forgery; floor",4.4e-13; 1.4e-13
+"Max logit shift, forgery stored in float32",1.0e-06
+Accuracy under the current head E^R,0.5343
+"the head of the last training round, E^(R-1)",0.4787
+older genuine heads,0.3623-0.4232
+a random head,0.4145
+the term removed (z=0),0.5111
+a forged passport under E^R,0.5343
+"Predictions changed, forged vs genuine passport under one head (8 pairs)",0

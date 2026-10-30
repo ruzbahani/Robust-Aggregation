@@ -1,0 +1,165 @@
+{
+  "config": "cifar10",
+  "root_size": 100,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "attack_start": 12,
+  "eval_from": 12,
+  "summary": {
+    "global_echo": {
+      "fltrust_mean": 0.7618055555555556,
+      "fltrust_std": 0.05049905267416068,
+      "foolsgold_mean": 0.5442280735596708,
+      "foolsgold_std": 0.06152776316389343
+    },
+    "peer_copy": {
+      "fltrust_mean": 0.5,
+      "fltrust_std": 0.0,
+      "foolsgold_mean": 0.8919601980452675,
+      "foolsgold_std": 0.015186120672085603
+    },
+    "lagged_self": {
+      "fltrust_mean": 0.4585763888888888,
+      "fltrust_std": 0.06156238372059268,
+      "foolsgold_mean": 0.5384307484567902,
+      "foolsgold_std": 0.049709143472042173
+    },
+    "ar2_replay": {
+      "fltrust_mean": 0.5081857638888888,
+      "fltrust_std": 0.025410929381493492,
+      "foolsgold_mean": 0.5035050154320988,
+      "foolsgold_std": 0.004469539782186362
+    },
+    "noise": {
+      "fltrust_mean": 0.5698900462962964,
+      "fltrust_std": 0.08189718871377982,
+      "foolsgold_mean": 0.501889146090535,
+      "foolsgold_std": 0.02221193006128484
+    },
+    "shrink": {
+      "fltrust_mean": 0.5000578703703704,
+      "fltrust_std": 9.570506602165383e-05,
+      "foolsgold_mean": 0.5451289223251029,
+      "foolsgold_std": 0.06039848886402685
+    }
+  },
+  "per_seed": {
+    "0": {
+      "global_echo": {
+        "fltrust": 0.7770833333333333,
+        "foolsgold": 0.5,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "peer_copy": {
+        "fltrust": 0.5,
+        "foolsgold": 0.8796296296296297,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "lagged_self": {
+        "fltrust": 0.543515625,
+        "foolsgold": 0.5,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "ar2_replay": {
+        "fltrust": 0.5120920138888889,
+        "foolsgold": 0.5,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "noise": {
+        "fltrust": 0.5688975694444445,
+        "foolsgold": 0.5,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "shrink": {
+        "fltrust": 0.5000607638888889,
+        "foolsgold": 0.5,
+        "n_pos": 240,
+        "n_neg": 2160
+      }
+    },
+    "1": {
+      "global_echo": {
+        "fltrust": 0.8145833333333333,
+        "foolsgold": 0.6312374614197531,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "peer_copy": {
+        "fltrust": 0.5,
+        "foolsgold": 0.913353587962963,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "lagged_self": {
+        "fltrust": 0.43265625,
+        "foolsgold": 0.6086246141975309,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "ar2_replay": {
+        "fltrust": 0.5371701388888889,
+        "foolsgold": 0.5098128858024691,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "noise": {
+        "fltrust": 0.6706857638888889,
+        "foolsgold": 0.5299884259259259,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "shrink": {
+        "fltrust": 0.5001736111111111,
+        "foolsgold": 0.630498649691358,
+        "n_pos": 240,
+        "n_neg": 2160
+      }
+    },
+    "2": {
+      "global_echo": {
+        "fltrust": 0.69375,
+        "foolsgold": 0.5014467592592593,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "peer_copy": {
+        "fltrust": 0.5,
+        "foolsgold": 0.8828973765432099,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "lagged_self": {
+        "fltrust": 0.39955729166666665,
+        "foolsgold": 0.5066676311728395,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "ar2_replay": {
+        "fltrust": 0.4752951388888889,
+        "foolsgold": 0.5007021604938272,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "noise": {
+        "fltrust": 0.47008680555555554,
+        "foolsgold": 0.475679012345679,
+        "n_pos": 240,
+        "n_neg": 2160
+      },
+      "shrink": {
+        "fltrust": 0.49993923611111113,
+        "foolsgold": 0.5048881172839507,
+        "n_pos": 240,
+        "n_neg": 2160
+      }
+    }
+  }
+}
